@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="enter_city_hint">Εισαγωγή Πόλης</string>
+    <string name="label_current_city">Τωρινή Πόλη</string>
+    <string name="label_choose_city">Επέλεξε Πόλη</string>
+    <string name="alertDialog_location_permission_message_location_phone_settings">Η εφαρμογή έχει ρυθμιστεί ώστε να ενημερώνει την τοποθεσία. Χρειάζεται πρόσβαση στην τοποθεσία. Πήγαινε στις ρυθμίσεις της συσκευής και ενεργοποίησε την τοποθεσία. Εναλλακτικά, απενεργοποίησε την ενημέρωση της τοποθεσίας στην εφαρμογή.</string>
+    <string name="alertDialog_location_permission_positiveButton_settings">Ρυθμίσεις συσκευής</string>
+    <string name="alertDialog_location_permission_negativeButton">Άκυρο</string>
+    <string name="progressDialog_gps_locate">Εύρεση τωρινής τοποθεσίας</string>
+    <string name="load_progress">Φορτώνεται…</string>
+    <string name="title_activity_search">Αναζήτηση Τοποθεσίας</string>
+    <string name="label_activity_main">Τωρινός Καιρός</string>
+    <string name="label_activity_weather_forecast">Ημερήσια Πρόβλεψη</string>
+    <string name="label_activity_graphs">Γραφικός Καιρός</string>
+    <string name="title_activity_license">Η άδεια για το %s</string>
+    <string name="toolbar_menu_refresh">Ενημέρωση</string>
+    <string name="toolbar_menu_search_city">Αναζήτηση Πόλης</string>
+    <string name="toolbar_menu_detect_location">Εντοπισμός Τοποθεσίας</string>
+    <string name="menu_action_toggle_values">Εναλλαγή των Τιμών</string>
+    <string name="menu_action_toggle_yaxis">Εναλλαγή του Άξονα Υ</string>
+    <string name="nav_menu_current_weather">Τωρινός Καιρός</string>
+    <string name="nav_menu_daily_forecast">Ημερήσια Πρόβλεψη</string>
+    <string name="nav_menu_graphs">Γραφικά</string>
+    <string name="nav_menu_settings">Ρυθμίσεις</string>
+    <string name="nav_menu_bitcoin_donation">Δωρεά σε Bitcoin</string>
+    <string name="connection_not_found">Ελέγξτε την σύνδεσή σας στο διαδίκτυο</string>
+    <string name="toast_parse_error">Παρουσιάστηκε κάποιο σφάλμα. Προσπαθήστε ξανά αργότερα.</string>
+    <string name="pressure_measurement">hPa</string>
+    <string name="wind_speed_meters">μ/δευτ.</string>
+    <string name="wind_speed_miles">μίλια/ώρα</string>
+    <string name="millimetre_label">χιλιοστά</string>
+    <string name="hint_activity_search">Αναζήτηση τοποθεσίας</string>
+    <string name="title_activity_settings">Ρυθμίσεις</string>
+    <string name="pref_title_temperature">Θερμοκρασία</string>
+    <string name="preference_hide_desc">Απόκρυψη της περιγραφής του καιρού</string>
+    <string name="pref_title_category_notification">Ρυθμίσεις ειδοποιήσεων</string>
+    <string name="pref_title_notification">Ενεργοποίηση των ειδοποιήσεων</string>
+    <string name="pref_title_notification_refresh_interval">Διάστημα Ανανέωσης</string>
+    <string name="update_period_15min">15 λεπτά</string>
+    <string name="update_period_30min">30 λεπτά</string>
+    <string name="update_period_1hour">Κάθε ώρα</string>
+    <string name="update_period_3hours">3 ώρες</string>
+    <string name="update_period_6hours">6 ώρες</string>
+    <string name="update_period_12hours">12 ώρες</string>
+    <string name="update_period_24hours">24 ώρες</string>
+    <string name="pref_title_vibrate">Δόνηση</string>
+    <string name="preference_widget_title_update_period">Περίοδος Ενημέρωσης</string>
+    <string name="preference_title_activity_general">Γενικές ρυθμίσεις</string>
+    <string name="preference_widget_update_location">Ενημέρωση τοποθεσίας</string>
+    <string name="preference_title_activity_widget">Ρυθμίσεις του γραφικού στοιχείου</string>
+    <string name="theme_dark">Σκοτεινό</string>
+    <string name="theme_light">Φωτεινό</string>
+    <string name="theme_transparent">Διαφανές</string>
+    <string name="preference_title_category_display">Προβολή</string>
+    <string name="pref_title_language">Γλώσσα</string>
+    <string name="pref_language_default">Προεπιλογή του Συστήματος</string>
+    <string name="preference_title_activity_about">Σχετικά</string>
+    <string name="about_version_pref_title">Έκδοση</string>
+    <string name="about_source_code_pref_title">Πηγαίος Κώδικας</string>
+    <string name="about_app_license_pref_title">Άδεια</string>
+    <string name="wind_label">Άνεμος: %1$s %2$s %3$s</string>
+    <string name="rain_label">Βροχή: %1$s %2$s</string>
+    <string name="snow_label">Χιόνι: %1$s %2$s</string>
+    <string name="humidity_label">Υγρασία: %1$s%2$s</string>
+    <string name="label_humidity">Υγρασία</string>
+    <string name="pressure_label">Πίεση: %1$s %2$s</string>
+    <string name="cloudiness_label">Συννεφιά: %1$s%2$s</string>
+    <string name="label_cloudiness">Συννεφιά</string>
+    <string name="last_update_label">Τελευταία ενημέρωση: %s</string>
+    <string name="sunrise_label">Ανατολή Ηλίου: %s</string>
+    <string name="sunset_label">Δύση Ηλίου: %s</string>
+    <string name="label_sunrise">Ανατολή Ηλίου</string>
+    <string name="label_sunset">Δύση Ηλίου</string>
+    <string name="temperature_morning_title">Πρωί</string>
+    <string name="temperature_day_title">Ημέρα</string>
+    <string name="temperature_evening_title">Απόγευμα</string>
+    <string name="temperature_night_title">Βράδυ</string>
+    <string name="label_temperature">Θερμοκρασία</string>
+    <string name="label_wind">Άνεμος</string>
+    <string name="label_rain">Βροχή</string>
+    <string name="label_snow">Χιόνι</string>
+    <string name="wind_direction_north">Β</string>
+    <string name="wind_direction_north_east">ΒΑ</string>
+    <string name="wind_direction_east">Α</string>
+    <string name="wind_direction_south_east">ΝΑ</string>
+    <string name="wind_direction_south">Ν</string>
+    <string name="wind_direction_south_west">ΝΔ</string>
+    <string name="wind_direction_west">Δ</string>
+    <string name="wind_direction_north_west">ΒΔ</string>
+    <string name="permission_location_rationale">Απαιτούνται Δικαιώματα Εντοπισμού της Τοποθεσίας, για να προσδιοριστεί η τωρινή πόλη.</string>
+    <string name="permission_not_granted">Δεν παραχωρήθηκαν δικαιώματα!</string>
+    <string name="permission_available_location">Δόθηκαν Δικαιώματα Εντοπισμού της Τοποθεσίας</string>
+    <string name="permission_location_need">Θα πρέπει να παραχωρήσεις Δικαιώματα Εντοπισμού της Τοποθεσίας</string>
+    <string name="preference_widget_use_geocoder">Χρήση γεωντοπισμού για την προβολή</string>
+    <string name="about_open_source_licenses_pref_title">Άδειες Ανοιχτού Κώδικα</string>
+    <string name="nav_feedback">Γνώμη</string>
+    <string name="preference_widget_theme_title">Θέμα Γραφικού Στοιχείου</string>
+    <string name="pref_title_theme">Θέμα</string>
+    <string name="widget_weather_icon_description">Εικονίδιο τωρινού καιρού</string>
+    <string name="widget_refresh_button">Πλήκτρο ανανέωσης του γραφικού στοιχείου</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Ο τοπικός καιρός</string>
+    <string name="alertDialog_location_permission_title" tools:ignore="MissingTranslation">Ρυθμίσεις τοποθεσίας και αδειών</string>
+    <string name="alertDialog_location_permission_message_location_gps_permission" tools:ignore="MissingTranslation">Η εφαρμογή χρειάζεται άδεια για να ενημερώωει την τοποθεσία μέσω GPS.</string>
+    <string name="alertDialog_location_permission_message_location_network_permission" tools:ignore="MissingTranslation">Η εφαρμογή χρειάζεται άδεια για να ενημερώνει την τοποθεσία μέσω Wi-Fi και δικτύων GSM.</string>
+    <string name="location_not_found" tools:ignore="MissingTranslation">Η τοποθεσία δε βρέθηκε</string>
+    <string name="alertDialog_battery_optimization_title" tools:ignore="MissingTranslation">Βελτιστοποίηση μπαταρίας</string>
+    <string name="alertDialog_battery_optimization_message" tools:ignore="MissingTranslation">Η εφαρμογή θα σου ζητήσει να απενεργοποιήσεις την βελτιστοποίηση κατανάλωσης για να ανανεώνεται η τοποθεσία, ο καιρός ή για να εντοπίζεται η τοποθεσία χρησιμοποιώντας το επιταχυνσιόμετρο στο υπόβαθρο.</string>
+    <string name="alertDialog_battery_optimization_proceed" tools:ignore="MissingTranslation">Συνεχίστε</string>
+    <string name="alertDialog_battery_optimization_cancel" tools:ignore="MissingTranslation">Ματαιώστε</string>
+    <string name="alertDialog_location_permission_message_location_phone_permission" tools:ignore="MissingTranslation">Χρειάζεται άδεια για ανάγνωση δεδομένων από την συσκευή, ώστε να ανανεώνεται η τοποθεσία χρησιμοποιώντας Wi-Fi και δίκτυα GSM. Αυτή η επιλογή θα αντλεί πληροφορίες για τους σταθμούς βάσης GSM στους οποίους συνδέεται η συσκευή.</string>
+    <string name="alertDialog_location_permission_positiveButton_permissions" tools:ignore="MissingTranslation">Αίτημα δικαιωμάτων</string>
+    <string name="permissions_not_granted" tools:ignore="MissingTranslation">Δεν έχουν δοθεί ακόμα δικαιώματα - πάτησε στο σύμβολο της τοποθεσίας στην εφαρμογή</string>
+    <string name="subscription_expired" tools:ignore="MissingTranslation">Η πρόσβαση έχει λήξει. Παρακαλώ αναβάθμισε την εφαρμογή.</string>
+    <string name="subscription_is_wrong" tools:ignore="MissingTranslation">Το OpenweathermapApiKey δεν είναι καταχωρημένο.</string>
+    <string name="share_weather_title" tools:ignore="MissingTranslation">Μοιράσου τον καιρό</string>
+    <string name="share_weather_app_not_found" tools:ignore="MissingTranslation">Δεν βρέθηκε εφαρμογή επικοινωνίας</string>
+    <string name="share_weather_descritpion" tools:ignore="MissingTranslation">Πόλη: %1$s
+\nΘερμοκρασία: %2$s
+\nΠεριγραφή: %3$s
+\nΆνεμοι: %4$s %5$s
+\nΑνατολή: %6$s
+\nΔύση: %7$s</string>
+    <string name="notification_channel_name" tools:ignore="MissingTranslation">Ο τοπικός καιρός</string>
+    <string name="notification_channel_description" tools:ignore="MissingTranslation">Οι ειδοποιήσεις του τοπικού καιρού</string>
+    <string name="graph_temperature_day_label" tools:ignore="MissingTranslation">Θερμοκρασία</string>
+    <string name="graph_wind_label" tools:ignore="MissingTranslation">Άνεμοι</string>
+    <string name="graph_rain_label" tools:ignore="MissingTranslation">Βροχή</string>
+    <string name="graph_snow_label" tools:ignore="MissingTranslation">Χιόνι</string>
+    <string name="graph_pressure_label" tools:ignore="MissingTranslation">Πίεση</string>
+    <string name="snackbar_add_location_disabled" tools:ignore="MissingTranslation">Δεν επιτρέπεται να έχεις πάνω από %1$d τοποθεσίες προς το παρόν.</string>
+    <string name="initial_guide_close" tools:ignore="MissingTranslation">Κλείσιμο</string>
+    <string name="initial_guide_next" tools:ignore="MissingTranslation">Επόμενο</string>
+    <string name="initial_guide_previous" tools:ignore="MissingTranslation">Προηγούμενο</string>
+    <string name="initial_guide_finish" tools:ignore="MissingTranslation">Τέλος</string>
+    <string name="initial_guide_title_1" tools:ignore="MissingTranslation">Οδηγός αρχικής παραμετροποίησης</string>
+    <string name="initial_guide_paragraph_1" tools:ignore="MissingTranslation">Ρυθμίζοντας την εφαρμογή στις δικές σου ανάγκες, μπορείς στο επόμενο βήμα να επιλέξεις τη στρατηγική ανανέωσης.
+\nΑντί για την προκαθορισμένη επιλογή ανανέωσης όταν αλλάζει η τοποθεσία, μπορεις να επιλέξεις <i>Να μην ανανεώνεται η τοποθεσία</i>.</string>
+    <string name="initial_guide_title_2" tools:ignore="MissingTranslation">Ρύθμιση ανανέωσης τοποθεσίας</string>
+    <string name="initial_guide_title_3" tools:ignore="MissingTranslation">Επιλογή πηγής τοποθεσίας</string>
+    <string name="initial_guide_paragraph_3" tools:ignore="MissingTranslation">Μπορείς να επιλέξεις την μέθοδο τοποθεσίας. Η επιλογή <i>Σύστημα</i> χρησιμοποιεί τις υπηρεσίες Google για να λάβει την τοποθεσία χρησιμοποιώντας τα δίκτυα (κινητής και Wi-Fi). Η επιλογή <i>Τοπικό MLS και Nominatim</i> χρησιμοποιεί την υπηρεσία τοποθεσίας της Mozilla για να λάβει τις συντεταγμένες και την υπηρεσία Nominatim για να λάβει το όνομα της τοποθεσίας. Η δεύτερη επιλογή απαιτεί δικαιώματα κλήσεων τηλεφώνου για να μπορεί να λάβει πληροφορίες για το δίκτυο κινητής. Η προτιμώμενη επιλογή είναι προεπιλεγμένη.</string>
+    <string name="initial_guide_title_4" tools:ignore="MissingTranslation">Πηγή τοποθεσίας και διεύθυνσης</string>
+    <string name="initial_guide_title_5" tools:ignore="MissingTranslation">Επιλογή στρατηγικής αφύπνισης</string>
+    <string name="initial_guide_title_6" tools:ignore="MissingTranslation">Στρατηγική αφύπνισης</string>
+    <string name="initial_guide_title_9" tools:ignore="MissingTranslation">Συγχαρητήρια</string>
+    <string name="initial_guide_paragraph_9" tools:ignore="MissingTranslation">Ο οδηγός τελείωσε. Μπορείς να βρεις περισσότερες ρυθμίσεις στο μενου Ρυθμίσεων (για παράδειγμα επιλογή γλώσσας, μονάδες μέτρησης, κλπ)
+\nΗ επόμενη οθόνη θα παρουσιάσει τα δικαιώματα που χρειάζονται και θα σου δώσει την επιλογή να τα ζητήσεις.
+\n
+\nΚαλή απόλαυση της εφαρμογής.</string>
+    <string name="help_page_general_title" tools:ignore="MissingTranslation">Γενικά</string>
+    <string name="help_page_1_title" tools:ignore="MissingTranslation">Κύρια εφαρμογή</string>
+    <string name="help_page_3_title" tools:ignore="MissingTranslation">Γενικές ρυθμίσεις</string>
+    <string name="help_page_3_content" tools:ignore="MissingTranslation">Αυτές οι επιλογές επηρεάζουν ολόκληρη την εφαρμογή.</string>
+    <string name="help_page_3_content_units" tools:ignore="MissingTranslation">
+        <b>Θερμοκρασία</b> - Μπορείτε να επιλέξετε μονάδα μέτρησης θερμοκρασίας, <b>Άνεμοι</b> - Μπορείτε να επιλέξετε μονάδα μέτρησης της ταχύτητας των ανέμων, και <b>Πίεση</b> - Μπορείτε να επιλέξετε μονάδα μέτρησης της ατμοσφαιρικής πίεσης. Οι τιμες θα επανυπολογιστούν χρησιμοποιώντας αυτές τις επιλογές.</string>
+    <string name="help_page_3_content_hide_description" tools:ignore="MissingTranslation">
+        <b>Απόκρυψη περιγραφής καιρού</b> - η περιγραφή των τρέχοντων καιρικών συνθηκών είναι κρυμμένη. Θα μπορείτε να δείτε τον καιρό μόνο από το εικονίδιο που αλλάζει.</string>
+    <string name="help_page_3_content_hide_update_location_3" tools:ignore="MissingTranslation">"Όταν έχετε επιλεγμένη την επιλογή  "<b>Ενεργοποίηση του GPS όταν είναι απαραίτητο</b>, η εφαρμογή θα προσπαθήσει να βρει τη τοποθεσία μέσω δικτύων κινητής ή wifi. Αν η τοποθεσία δεν μπορεί να βρεθεί μέσω των δικτύων, τότε η εφαρμογή θα ενεργοποιεί το GPS για αρκετά δευτερόλεπτα για να βρει την τοποθεσία.</string>
+    <string name="help_page_3_content_location_address_source" tools:ignore="MissingTranslation">
+        <b>Πηγή τοποθεσίας και διεύθυνσης</b>
+\nΜπορείτε να επιλέξετε από πού η εφαρμογή θα λαμβάνει την τοποθεσία και τη διεύθυνση.</string>
+    <string name="help_page_3_content_location_address_source_2" tools:ignore="MissingTranslation">
+        <b>Σύστημα</b> - Η εφαρμογή θα λαμβάνει την τοποθεσία και τη διεύθυνση χρησιμοποιώντας τις υπηρεσίες συστήματος του Android (συνήθως υπηρεσίες τοποθεσίας της Google).</string>
+    <string name="help_page_5_title" tools:ignore="MissingTranslation">Ρυθμίσεις αποσφαλμάτωσης</string>
+    <string name="label_activity_help" tools:ignore="MissingTranslation">Βοήθεια</string>
+    <string name="title_activity_locations" tools:ignore="MissingTranslation">Τοποθεσίες</string>
+    <string name="menu_action_visible_graph_settings" tools:ignore="MissingTranslation">Ρυθμίσεις εμφανιζόμενων γραφικών</string>
+    <string name="menu_action_graph_combined_settings" tools:ignore="MissingTranslation">Ρυθμίσεις συνδυασμένων γραφημάτων</string>
+    <string name="forecast_settings_column_icon" tools:ignore="MissingTranslation">Εικονίδιο</string>
+    <string name="forecast_settings_column_description" tools:ignore="MissingTranslation">Περιγραφή</string>
+    <string name="forecast_settings_column_temperature" tools:ignore="MissingTranslation">Θερμοκρασία</string>
+    <string name="forecast_settings_column_apparent_temperature" tools:ignore="MissingTranslation">Αισθητή θερμοκρασία</string>
+    <string name="forecast_settings_column_wind" tools:ignore="MissingTranslation">Άνεμοι</string>
+    <string name="forecast_settings_column_wind_direction" tools:ignore="MissingTranslation">Διεύθυνση ανέμων</string>
+    <string name="forecast_settings_column_rainsnow" tools:ignore="MissingTranslation">Βροχή/Χιόνι</string>
+    <string name="forecast_settings_column_humidity" tools:ignore="MissingTranslation">Υγρασία</string>
+    <string name="forecast_settings_column_pressure" tools:ignore="MissingTranslation">Πίεση</string>
+    <string name="forecast_column_wind_direction_unit" tools:ignore="MissingTranslation">↑↗→</string>
+    <string name="ok" tools:ignore="MissingTranslation">Εντάξει</string>
+    <string name="cancel" tools:ignore="MissingTranslation">Άκυρο</string>
+    <string name="forecast_settings_graph_combined" tools:ignore="MissingTranslation">Συνδυασμένα</string>
+    <string name="forecast_settings_graph_temperature" tools:ignore="MissingTranslation">Θερμοκρασία</string>
+    <string name="forecast_settings_graph_wind" tools:ignore="MissingTranslation">Άνεμοι</string>
+    <string name="forecast_settings_graph_rain" tools:ignore="MissingTranslation">Βροχή</string>
+    <string name="forecast_settings_graph_snow" tools:ignore="MissingTranslation">Χιονόπτωση</string>
+    <string name="forecast_settings_graph_pressure" tools:ignore="MissingTranslation">Πίεση</string>
+    <string name="forecast_settings_graph_combined_temperature" tools:ignore="MissingTranslation">Θερμοκρασία</string>
+    <string name="forecast_settings_graph_combined_wind" tools:ignore="MissingTranslation">Άνεμοι</string>
+    <string name="forecast_settings_graph_combined_rain_snow" tools:ignore="MissingTranslation">Βροχή/Χιόνι</string>
+    <string name="forecast_settings_graph_combined_pressure" tools:ignore="MissingTranslation">Πίεση</string>
+    <string name="forecast_settings_visible_graphs" tools:ignore="MissingTranslation">Να εμφανίζονται τα γραφήματα</string>
+    <string name="forecast_settings_combined_values" tools:ignore="MissingTranslation">Δεδομένα για το συνδυασμένο γράφημα</string>
+    <string name="forecast_settings_graph_combined_show_legend" tools:ignore="MissingTranslation">Εμφάνιση λεζάντας στο γράφημα</string>
+    <string name="nav_menu_help" tools:ignore="MissingTranslation">Βοήθεια</string>
+    <string name="pressure_measurement_mmhg" tools:ignore="MissingTranslation">mmHg</string>
+    <string name="pressure_measurement_inhg" tools:ignore="MissingTranslation">inHg</string>
+    <string name="pressure_measurement_mbar" tools:ignore="MissingTranslation">mbar</string>
+    <string name="wind_speed_knots" tools:ignore="MissingTranslation">κόμβοι</string>
+    <string name="wind_speed_kilometers" tools:ignore="MissingTranslation">χλμ/ώρα</string>
+    <string name="inches_label" tools:ignore="MissingTranslation">ίντσες</string>
+    <string name="pref_title_time_style" tools:ignore="MissingTranslation">Μορφή ώρας</string>
+    <string name="time_style_system" tools:ignore="MissingTranslation">Σύστημα</string>
+    <string name="time_style_12_h" tools:ignore="MissingTranslation">12 ώρες ΠΜ/ΜΜ</string>
+    <string name="time_style_24_h" tools:ignore="MissingTranslation">24 ώρες</string>
+    <string name="pref_title_date_style" tools:ignore="MissingTranslation">Μορφή ημερομηνίας</string>
+    <string name="date_style_dots" tools:ignore="MissingTranslation">ηη.μμ.(εε)</string>
+    <string name="date_style_slash_month_first" tools:ignore="MissingTranslation">μμ/ηη(/εε)</string>
+    <string name="date_style_slash_day_first" tools:ignore="MissingTranslation">ηη/μμ(/εε)</string>
+    <string name="forecast_number_of_days_hours_3_days" tools:ignore="MissingTranslation">3 ημέρες</string>
+    <string name="forecast_number_of_days_hours_4_days" tools:ignore="MissingTranslation">4 ημέρες</string>
+    <string name="forecast_number_of_days_hours_5_days" tools:ignore="MissingTranslation">5 ημέρες</string>
+    <string name="forecast_number_of_days_hours_3_hours" tools:ignore="MissingTranslation">3x (ανά 3 ώρες)</string>
+    <string name="forecast_number_of_days_hours_4_hours" tools:ignore="MissingTranslation">4x (ανά 3 ώρες)</string>
+    <string name="forecast_number_of_days_hours_5_hours" tools:ignore="MissingTranslation">5x (ανά 3 ώρες)</string>
+    <string name="title_open_source_licenses" tools:ignore="MissingTranslation">Άδειες ελεύθερου λογισμικού</string>
+    <string name="pref_title_wind" tools:ignore="MissingTranslation">Άνεμοι</string>
+    <string name="pref_title_wind_direction" tools:ignore="MissingTranslation">Τύπος διεύθυνσης ανέμων</string>
+    <string name="pref_title_rain_snow" tools:ignore="MissingTranslation">Βροχή και χιόνι</string>
+    <string name="pref_title_pressure" tools:ignore="MissingTranslation">Πίεση</string>
+    <string name="location_update_strategy_title" tools:ignore="MissingTranslation">Ρύθμιση ανανέωσης τοποθεσίας</string>
+    <string name="update_location_none" tools:ignore="MissingTranslation">Να μην ανανεώνεται η τοποθεσία</string>
+    <string name="update_location_full" tools:ignore="MissingTranslation">Ανανέωση τοποθεσίας (προτεινόμενο)</string>
+    <string name="update_location_network_only" tools:ignore="MissingTranslation">Ανανέωση τοποθεσίας χωρίς GPS</string>
+    <string name="update_location_gps_enabled" tools:ignore="MissingTranslation">Ενεργοποίηση του GPS μόνο όταν απαιτείται</string>
+    <string name="update_period_by_sensors" tools:ignore="MissingTranslation">Μέσω επιταχυνσιόμετρου</string>
+    <string name="update_period_nothing" tools:ignore="MissingTranslation">Μόνο χειροκίνητα</string>
+    <string name="pref_title_notification_presence" tools:ignore="MissingTranslation">Εμφάνιση μηνύματος ειδοποίησης</string>
+    <string name="notification_when_updated" tools:ignore="MissingTranslation">Όταν γίνεται ανανέωση</string>
+    <string name="notification_permanent" tools:ignore="MissingTranslation">Μόνιμα</string>
+    <string name="notification_on_lock_screen" tools:ignore="MissingTranslation">Στην οθόνη κλειδώματος</string>
+    <string name="notification_status_icon_sun" tools:ignore="MissingTranslation">Εικονίδιο ήλιου</string>
+    <string name="notification_status_icon_temperature" tools:ignore="MissingTranslation">Θερμοκρασία</string>
+    <string name="notification_status_icon_one_invisible_point" tools:ignore="MissingTranslation">Αόρατο</string>
+    <string name="notification_visual_style_build_in" tools:ignore="MissingTranslation">Κλασσικό</string>
+    <string name="notification_visual_style_custom_with_forecast" tools:ignore="MissingTranslation">Προσαρμοσμένο με πρόβλεψη</string>
+    <string name="pref_title_notification_visual_style" tools:ignore="MissingTranslation">Τύπος οπτικής ειδοποίησης</string>
+    <string name="preference_widget_graphs_native_scale" tools:ignore="MissingTranslation">Εμφάνιση γραφήματος στη τοπική ανάλυση (αν το γράφημα είναι πολύ μικρό)</string>
+    <string name="preference_title_category_location_weather" tools:ignore="MissingTranslation">Ανανέωση τοποθεσίας και καιρού</string>
+    <string name="preference_title_category_units" tools:ignore="MissingTranslation">Ρυθμίσεις μονάδων</string>
+    <string name="preference_title_power_save" tools:ignore="MissingTranslation">Επιλογές εξοικονόμησης ενέργειας</string>
+    <string name="preference_title_category_system" tools:ignore="MissingTranslation">Ρυθμίσεις συστήματος</string>
+    <string name="open_weather_map_api_key" tools:ignore="MissingTranslation">Κλειδί API του Openweathermap.org</string>
+    <string name="open_weather_map_api_default_key" tools:ignore="MissingTranslation">Ενσωματωμένο</string>
+    <string name="pref_language_zh_rcn" tools:ignore="MissingTranslation">"中文  (Κινέζικα)"</string>
+    <string name="pref_language_sw" tools:ignore="MissingTranslation">Kiswahili (Σουαχίλι)</string>
+    <string name="pref_language_sv" tools:ignore="MissingTranslation">Svenska (Σουηδικά)</string>
+    <string name="pref_language_he" tools:ignore="MissingTranslation">עברית (Εβραϊκά)</string>
+    <string name="pref_language_nb_rNO" tools:ignore="MissingTranslation">Norsk (Bokmål) (Νορβηγικά (Bokmål))</string>
+    <string name="pref_language_nl" tools:ignore="MissingTranslation">Nederlands (Ολλανδικά)</string>
+    <string name="pref_language_ny" tools:ignore="MissingTranslation">Nyanja (Τσέουα)</string>
+    <string name="pref_language_hu" tools:ignore="MissingTranslation">Magyar (Ούγγρικα)</string>
+    <string name="pref_language_es" tools:ignore="MissingTranslation">Español (Ισπανικά)</string>
+    <string name="pref_language_el" tools:ignore="MissingTranslation">Ελληνικά (Greek)</string>
+    <string name="pref_language_ar" tools:ignore="MissingTranslation">العَرَبِيَّة‎ (Αράβικα)</string>
+    <string name="pref_language_uk" tools:ignore="MissingTranslation">Українська (Ουκρανικά)</string>
+    <string name="pref_language_ro" tools:ignore="MissingTranslation">Română (Ρουμάνικα)</string>
+    <string name="pref_language_pt_pt" tools:ignore="MissingTranslation">Português (Portugal) (Πορτογαλικά (Πορτογαλία))</string>
+    <string name="pref_language_pt_br" tools:ignore="MissingTranslation">Português (Brasil) (Πορτογαλικά (Βραζιλία))</string>
+    <string name="pref_language_sq" tools:ignore="MissingTranslation">Shqip (Αλβανικά)</string>
+    <string name="pref_language_eu" tools:ignore="MissingTranslation">Euskara (Βάσκικα)</string>
+    <string name="pref_language_be" tools:ignore="MissingTranslation">Беларуская (Λευκορωσικά)</string>
+    <string name="pref_language_be_latn" tools:ignore="MissingTranslation">Беларуская (Λευκορώσικα, λατινική γραφή)</string>
+    <string name="pref_language_ca" tools:ignore="MissingTranslation">Català (Καταλανικά)</string>
+    <string name="pref_language_cs" tools:ignore="MissingTranslation">Čeština (Τσέχικα)</string>
+    <string name="pref_language_da" tools:ignore="MissingTranslation">Dansk (Δανέζικα)</string>
+    <string name="pref_language_en" tools:ignore="MissingTranslation">English (Αγγλικά)</string>
+    <string name="pref_language_fi" tools:ignore="MissingTranslation">Suomi (Φινλανδικά)</string>
+    <string name="pref_language_fr" tools:ignore="MissingTranslation">Français (Γαλλικά)</string>
+    <string name="pref_language_gl" tools:ignore="MissingTranslation">Galego (Γαλικιανά)</string>
+    <string name="pref_language_de" tools:ignore="MissingTranslation">Deutsch (Γερμανικά)</string>
+    <string name="pref_language_it" tools:ignore="MissingTranslation">Italiano (Ιταλικά)</string>
+    <string name="pref_language_jp" tools:ignore="MissingTranslation">日本語 (Ιαπωνέζικα)</string>
+    <string name="pref_language_pl" tools:ignore="MissingTranslation">Polski (Πολωνέζικα)</string>
+    <string name="pref_language_ru" tools:ignore="MissingTranslation">Русский (Ρώσικα)</string>
+    <string name="pref_language_sr" tools:ignore="MissingTranslation">Српски (Σέρβικα)</string>
+    <string name="pref_language_sl" tools:ignore="MissingTranslation">Slovenščina (Σλοβενικά)</string>
+    <string name="pref_language_tr" tools:ignore="MissingTranslation">Türkçe (Τούρκικα)</string>
+    <string name="location_geocoder_title" tools:ignore="MissingTranslation">Πηγή τοποθεσίας και διεύθυνσης</string>
+    <string name="location_geocoder_local" tools:ignore="MissingTranslation">Τοπικό MLS και Nominatim (προτεινόμενο)</string>
+    <string name="location_geocoder_system" tools:ignore="MissingTranslation">Σύστημα</string>
+    <string name="preference_display_update_title" tools:ignore="MissingTranslation">Προβολή σύνοψης ανανέωσης</string>
+    <string name="preference_display_update_nothing" tools:ignore="MissingTranslation">Τίποτα</string>
+    <string name="preference_display_update_value" tools:ignore="MissingTranslation">Μόνο η τιμή ανανεώθηκε</string>
+    <string name="preference_display_update_location_source" tools:ignore="MissingTranslation">Ανανεώθηκε η τιμή με τη πηγή της τοποθεσίας</string>
+    <string name="widget_setting_actions_graph_label" tools:ignore="MissingTranslation">Γράφημα</string>
+    <string name="alertDialog_mls_service_title" tools:ignore="MissingTranslation">Περιορισμός της υπηρεσίας τοποθεσίας Mozilla</string>
+    <string name="alertDialog_android_10_permissions_title" tools:ignore="MissingTranslation">Αλλάζει η άδεια Android 10</string>
+    <string name="alertDialog_voice_disclaimer_title" tools:ignore="MissingTranslation">Μεταφράσεις κειμένου και οδηγιών</string>
+    <string name="weather_condition_description_804" tools:ignore="MissingTranslation">συννεφιά</string>
+    <string name="weather_forecast_license_key_title" tools:ignore="MissingTranslation">Κλειδί αδείας χρήσεως</string>
+    <string name="preference_widget_show_controls" tools:ignore="MissingTranslation">Εμφάνιση ρυθμίσεων στο widget</string>
+    <string name="preference_widget_show_labels" tools:ignore="MissingTranslation">Εμφάνιση ετικετών στο widget</string>
+    <string name="preference_title_add_tts" tools:ignore="MissingTranslation">Νέες ρυθμίσεις καθοδήγησης</string>
+    <string name="preference_title_tts_lang" tools:ignore="MissingTranslation">Επιλογές γλώσσας καθοδήγησης</string>
+    <string name="preference_title_tts" tools:ignore="MissingTranslation">Ρυθμίσεις καθοδήγησης</string>
+    <string name="preference_widget_title_update_auto_period" tools:ignore="MissingTranslation">Περίοδος ενημέρωσης για τη θέση (Τοποθεσία 0)</string>
+    <string name="pref_title_notification_status_icon" tools:ignore="MissingTranslation">Στυλ εικονιδίου γραμμής κατάστασης</string>
+    <string name="update_period_regular_only" tools:ignore="MissingTranslation">Κατά την τακτική ενημέρωση</string>
+    <string name="wind_speed_beaufort" tools:ignore="MissingTranslation">Μποφόρ</string>
+    <string name="voice_setting_trigger_when_bt_connected" tools:ignore="MissingTranslation">Όταν μια συσκευή Bluetooth είναι συνδεδεμένη</string>
+    <string name="voice_setting_trigger_on_weather_update" tools:ignore="MissingTranslation">Όταν ο καιρός ενημερώνεται</string>
+    <string name="tts_say_current_weather" tools:ignore="MissingTranslation">Τρέχουσες καιρικές συνθήκες</string>
+    <string name="tts_say_current_weather_with_location" tools:ignore="MissingTranslation">Τρέχουσες καιρικές συνθήκες για τοποθεσία %s</string>
+    <string name="tts_say_greeting_evening" tools:ignore="MissingTranslation">Καλησπέρα</string>
+</resources>

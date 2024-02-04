@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="hide_desc_pref_key"
+        android:title="@string/preference_hide_desc"/>
+    <PreferenceCategory
+        android:key="display_category_pref_key"
+        android:title="@string/preference_title_category_display">
+        <ListPreference
+            android:defaultValue="default"
+            android:key="language_pref_key"
+            android:dialogTitle="@string/pref_title_language"
+            android:title="@string/pref_title_language"
+            android:entries="@array/language_entries"
+            android:entryValues="@array/language_values"/>
+        <ListPreference
+            android:defaultValue="system"
+            android:key="theme_pref_key"
+            android:dialogTitle="@string/pref_title_theme"
+            android:title="@string/pref_title_theme"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"/>
+        <ListPreference
+            android:defaultValue="weather_icon_set_merlinTheRed"
+            android:dialogTitle="@string/preference_weather_icon_set_title"
+            android:entries="@array/weather_icon_set_entries"
+            android:entryValues="@array/weather_icon_set_values"
+            android:key="weather_icon_set_pref_key"
+            android:title="@string/preference_weather_icon_set_title"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="system_category_pref_key"
+        android:title="@string/preference_title_category_system">
+        <ListPreference
+            android:defaultValue="weather_forecast_features_free"
+            android:dialogTitle="@string/preference_weather_weather_forecast_features_title"
+            android:entries="@array/weather_forecast_features_entries"
+            android:entryValues="@array/weather_forecast_features_values"
+            android:key="weather_forecast_features_pref_key"
+            android:title="@string/preference_weather_weather_forecast_features_title"
+            />
+        <!-- DialogPreference
+            android:key="weather_forecast_license_key_pref_key_dialog" android:title="@string/weather_forecast_license_key_title"
+            android:dialogLayout="@layout/preferences_license_key"
+            android:positiveButtonText="OK"
+            android:negativeButtonText="Cancel"
+            /-->
+        <EditTextPreference
+            android:key="weather_forecast_license_key_pref_key"
+            android:title="@string/weather_forecast_license_key_title" />
+        <EditTextPreference
+            android:key="open_weather_map_api_key"
+            android:title="@string/open_weather_map_api_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

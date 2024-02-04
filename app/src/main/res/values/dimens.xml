@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="settings_text_size">16sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="settings_content_marginBottom">30dp</dimen>
+    <dimen name="settings_content_related_marginBottom">15dp</dimen>
+    <dimen name="settings_content_label_padding">4dp</dimen>
+    <dimen name="widget_3x3_text_size">15sp</dimen>
+    <dimen name="widget_main_temperature_text_size">30sp</dimen>
+    <dimen name="widget_main_weather_panel_width">170dp</dimen>
+    <dimen name="widget_forecast_icon_size">50dp</dimen>
+    <dimen name="widget_forecast_day_padding">6dp</dimen>
+    <dimen name="widget_forecast_padding_top">6dp</dimen>
+    <dimen name="widget_refresh_icon_padding_top">3dp</dimen>
+    <dimen name="widget_refresh_icon_size">20dp</dimen>
+    <dimen name="notification_icon_size">25dp</dimen>
+    <dimen name="notification_forecast_icon_size">20dp</dimen>
+    <dimen name="notification_padding">6dp</dimen>
+    <dimen name="notification_weather_description_padding">12dp</dimen>
+    <dimen name="widget_settings_button_padding_left">10dp</dimen>
+    <dimen name="widget_settings_button_width">27dp</dimen>
+
+    <!-- CardView dimensions -->
+    <dimen name="cardview_text_size">20sp</dimen>
+    <dimen name="cardview_padding">4dp</dimen>
+
+    <dimen name="cardview_margin">8dp</dimen>
+    <dimen name="cardview_content_padding">8dp</dimen>
+</resources>

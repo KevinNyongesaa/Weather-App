@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="enter_city_hint">Stadt eingeben</string>
+    <string name="label_current_city">Aktuelle Stadt</string>
+    <string name="label_choose_city">Stadt auswählen</string>
+    <string name="alertDialog_location_permission_message_location_phone_settings">In der App ist die Standortaktualisierung eingestellt. Erfordert den Standortzugriff. Öffnen Sie die Geräteeinstellungen und schalten Sie den Standort ein oder schalten Sie Standortaktualisierungen in der App aus.</string>
+    <string name="alertDialog_location_permission_positiveButton_settings">Geräteeinstellungen</string>
+    <string name="alertDialog_location_permission_negativeButton">Abbrechen</string>
+    <string name="progressDialog_gps_locate">Aktuelle Position wird gesucht</string>
+    <string name="load_progress">Lädt …</string>
+    <!-- Activity names -->
+    <string name="title_activity_search">Standortsuche</string>
+    <string name="label_activity_main">Aktuelles Wetter</string>
+    <string name="label_activity_weather_forecast">Tagesvorhersage</string>
+    <string name="label_activity_graphs">Wetterdiagramme</string>
+    <string name="title_activity_license">Lizenz für %s</string>
+    <!-- Toolbar menu -->
+    <string name="toolbar_menu_refresh">Aktualisieren</string>
+    <string name="toolbar_menu_search_city">Stadt suchen</string>
+    <string name="toolbar_menu_detect_location">Standort ermitteln</string>
+    <string name="menu_action_toggle_values">Werte umschalten</string>
+    <string name="menu_action_toggle_yaxis">Y-Achse umschalten</string>
+    <!-- Navigation drawer -->
+    <string name="nav_menu_current_weather">Aktuelles Wetter</string>
+    <string name="nav_menu_daily_forecast">Tagesvorhersage</string>
+    <string name="nav_menu_graphs">Diagramme</string>
+    <string name="nav_menu_settings">Einstellungen</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="nav_menu_bitcoin_donation">Bitcoin spenden</string>
+    <!-- Toast messages -->
+    <string name="connection_not_found"> Überprüfen Sie Ihre Internetverbindung</string>
+    <string name="toast_parse_error">Ein Fehler ist aufgetreten. Bitte später versuchen.</string>
+    <!-- Units and Measurement-->
+    <string name="pressure_measurement">hPa</string>
+    <string name="wind_speed_meters">m/s</string>
+    <string name="wind_speed_miles">Meilen pro Stunde</string>
+    <string name="millimetre_label">mm</string>
+    <!-- Search Screen strings -->
+    <string name="hint_activity_search">Standort suchen</string>
+    <!-- Preference Screen strings -->
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="pref_title_temperature">Temperatur</string>
+    <string name="pref_title_category_notification">Benachrichtigungseinstellungen</string>
+    <string name="pref_title_notification">Benachrichtigungen aktivieren</string>
+    <string name="pref_title_notification_refresh_interval">Aktualisierungsintervall</string>
+    <string name="update_period_15min">15 Minuten</string>
+    <string name="update_period_30min">30 Minuten</string>
+    <string name="update_period_1hour">Jede Stunde</string>
+    <string name="update_period_3hours">3 Stunden</string>
+    <string name="update_period_6hours">6 Stunden</string>
+    <string name="update_period_12hours">12 Stunden</string>
+    <string name="update_period_24hours">24 Stunden</string>
+    <string name="pref_title_vibrate">Vibrieren</string>
+    <string name="preference_widget_title_update_period">Wetteraktualisierungsintervall (Standort 1,2,3 ...)</string>
+    <string name="preference_title_activity_general">Allgemeine Einstellungen</string>
+    <string name="preference_title_activity_widget">Widget-Einstellungen</string>
+    <string name="preference_hide_desc">Wetterbeschreibung ausblenden</string>
+    <!-- Preference Screen About -->
+    <string name="preference_title_activity_about">Über</string>
+    <string name="about_version_pref_title">Version</string>
+    <string name="about_source_code_pref_title">Quellcode</string>
+    <string name="about_app_license_pref_title">Lizenz</string>
+    <string name="about_open_source_licenses_pref_title">Freie Software-Lizenzen</string>
+    <!-- Weather conditions label strings -->
+    <string name="wind_label">Wind: %1$s %2$s %3$s</string>
+    <string name="rain_label">Regen: %1$s %2$s</string>
+    <string name="snow_label">Schnee:  %1$s %2$s</string>
+    <string name="humidity_label">Feuchtigkeit: %1$s%2$s</string>
+    <string name="label_humidity">Feuchtigkeit</string>
+    <string name="pressure_label">Luftdruck: %1$s %2$s</string>
+    <string name="cloudiness_label">Bewölkung: %1$s%2$s</string>
+    <string name="label_cloudiness">Bewölkung</string>
+    <string name="last_update_label">Zuletzt aktualisiert: %s</string>
+    <string name="sunrise_label">Sonnenaufgang: %s</string>
+    <string name="sunset_label">Sonnenuntergang: %s</string>
+    <string name="label_sunrise">Sonnenaufgang</string>
+    <string name="label_sunset">Sonnenuntergang</string>
+    <string name="temperature_morning_title">Morgen</string>
+    <string name="temperature_day_title">Temperatur</string>
+    <string name="temperature_evening_title">Abend</string>
+    <string name="temperature_night_title">Nacht</string>
+    <string name="label_temperature">Temperatur</string>
+    <string name="label_wind">Wind</string>
+    <string name="label_rain">Regen</string>
+    <string name="label_snow">Schnee</string>
+    <!-- Widgets strings -->
+    <string name="widget_weather_icon_description">Symbol für momentanes Wetter</string>
+    <string name="widget_refresh_button">\"Widget aktualisieren\" Button</string>
+    <!-- Donation Bitcoin dialog --><![CDATA[
+
+
+    !-- Wind directions -->
+
+    ]]>
+    <string name="wind_direction_north">N↓</string>
+    <string name="wind_direction_north_east">NO↙</string>
+    <string name="wind_direction_east">O←</string>
+    <string name="wind_direction_south_east">SO↖</string>
+    <string name="wind_direction_south">S↑</string>
+    <string name="wind_direction_south_west">SW↗</string>
+    <string name="wind_direction_west">W→</string>
+    <string name="wind_direction_north_west">NW↘</string>
+    <!-- Permission strings -->
+    <string name="permission_location_rationale">Standortberechtigungen nötig, um Stadt zu ermitteln</string>
+    <string name="permission_not_granted">Berechtigungen nicht erteilt!</string>
+    <string name="permission_available_location">Standortberechtigungen wurden erteilt</string>
+    <string name="pref_language_default">Systemstandard</string>
+    <string name="pref_title_language">Sprache</string>
+    <string name="preference_title_category_display">Anzeige</string>
+    <string name="preference_widget_use_geocoder">Geokoordinaten zur Anzeige verwenden</string>
+    <string name="preference_widget_update_location">Standort aktualisieren</string>
+    <string name="preference_widget_theme_title">Widget-Motiv</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_transparent">Transparent</string>
+    <string name="pref_title_theme">Motiv</string>
+    <string name="permission_location_need">Standortberechtigungen erteilen</string>
+    <string name="alertDialog_location_permission_message_location_gps_permission" tools:ignore="MissingTranslation">Die App benötigt die Berechtigung zur Standortbestimmung über GPS.</string>
+    <string name="alertDialog_location_permission_message_location_network_permission" tools:ignore="MissingTranslation">Die App benötigt die Berechtigung zur Standortbestimmung über WLAN- und Mobilfunknetze.</string>
+    <string name="location_not_found" tools:ignore="MissingTranslation">Standort nicht gefunden</string>
+    <string name="help_page_general_content" tools:ignore="MissingTranslation">Die App bestimmt den Standort durch Nutzung von Mobilfunknetz, WLAN und - falls diese ausfallen - GPS, um Wetterdaten zu diesem Ort anzuzeigen, zu dem wiederum Koordinaten vom Mozilla-Standortdienst bezogen werden. Die Anwendung benötigt mindestens: eine Basisstation des GSM-Netzes oder zwei erreichbare WLAN-Netze oder eine beliebige Kombination von GSM- und WIFI-Netzen. Bei Verwendung des Widgets auf Ihrem Telefon oder Tablet, können Sie Ihren Standort und das aktuelle Wetter auf dem Startbildschirm sehen. Die Standortaktualisierung kann in einem bestimmten Intervall (z. B. stündlich) geschehen, oder die App kann den Beschleunigungsmesser nutzen, um Bewegungen und damit Entfernungen zu erkennen, die einen bestimmten Wert übersteigen. Wird das Gerät in der Tasche getragen, nimmt die Entfernung schneller zu. Sie können die Standortaktualisierung ausschalten - dann werden nur die Wetterdaten aktualisiert. Die App aktualisiert Standort und Wetter nach festgelegten Intervallen. Zum Beispiel können Sie eine Aktualisierung zu jeder vollen Stunde festlegen. Das Wetter wird unmittelbar nach dem Standort aktualisiert, oder wenn der Bildschirm angeht - aber nicht öfter als einmal in 15 Minuten (und nicht wenn das Wetter in den letzten 15 Minuten aktualisiert wurde). Die Informationen werden verwendet, um Standortkoordinaten über den Mozilla-Standortdienst zu erhalten. Die App versucht, das GPS zu verwenden, wenn der Standort nicht über Mobilfunk- und WLAN-Netze abrufbar ist. Die Standortkoordinaten werden verwendet, um Adressen über den Nominatim-Dienst zu beziehen. Die Adresse wird in der Anwendung oder dem Widget verwendet. Die Anwendung nutzt den Dienst von OpenWeatherMap.org, um aktuelle Wetterdaten zu erhalten.</string>
+    <string name="alertDialog_location_permission_title" tools:ignore="MissingTranslation">Standort- und Berechtigungseinstellungen</string>
+    <string name="alertDialog_location_permission_message_location_phone_permission" tools:ignore="MissingTranslation">Die Berechtigung zum Lesen der Geräteinformationen wird benötigt, um den Standort über WLAN- und GSM-Netze zu aktualisieren. Es werden so Informationen über die mit dem Gerät verbundene Mobilfunkstation bezogen.</string>
+    <string name="permissions_not_granted" tools:ignore="MissingTranslation">Noch keine Berechtigungen erteilt - klicken Sie auf das Standortsymbol in der App</string>
+    <string name="initial_guide_title_3" tools:ignore="MissingTranslation">Standortbezugsquelle</string>
+    <string name="initial_guide_close" tools:ignore="MissingTranslation">Schließen</string>
+    <string name="initial_guide_next" tools:ignore="MissingTranslation">Nächster</string>
+    <string name="initial_guide_previous" tools:ignore="MissingTranslation">Vorheriger</string>
+    <string name="initial_guide_finish" tools:ignore="MissingTranslation">Abschließen</string>
+    <string name="initial_guide_title_1" tools:ignore="MissingTranslation">Anleitung zur Erstkonfiguration</string>
+    <string name="initial_guide_paragraph_1" tools:ignore="MissingTranslation">Nachdem Sie die App an Ihre Bedürfnisse angepasst haben, können Sie als nächstes die Aktualiserungsstrategie festlegen. 
+\nAbweichend von der Standardeinstellung zur Aktualisierung bei Ortsänderungen können Sie <i>Ort nicht aktualisieren</i> wählen.</string>
+    <string name="initial_guide_title_2" tools:ignore="MissingTranslation">Einstellung der Standortaktualisierung</string>
+    <string name="initial_guide_paragraph_3" tools:ignore="MissingTranslation">Sie können die Methode zur Standortbestimmung auswählen - das <i>System</i> verwendet Google-Dienste, um den Standort über Netzwerke (Mobilfunk- und WLAN-Netze) zu beziehen. Die Alternative <i>Lokaler MLS und Nominatim</i> verwendet Mozilla\'s Standortdienst, um Standortkoordinaten zu erhalten und den Nominatim-Dienst, um Standortnamen zu ermitteln. Die zweite Option erfordert die Berechtigung auf Telefoninformationen zuzugreifen, um Informationen zum Mobilfunknetz zu beziehen. Die bevorzugte Option ist vorgewählt.</string>
+    <string name="initial_guide_title_4" tools:ignore="MissingTranslation">Standort- und Adressenbezugsquelle</string>
+    <string name="initial_guide_paragraph_5" tools:ignore="MissingTranslation">Einige Telefone übermitteln die verbundene Mobilfunkzelle nicht korrekt, solange der Bildschirm nicht eingeschaltet ist. Die bevorzugte Einstellung (mit eingeschaltetem Bildschirm) hat den Nachteil, dass sich das Display für einige Sekunden einschaltet. Dies hat geringe Auswirkungen auf die Akkulaufzeit. Beginnen Sie mit dieser Option, versuchen Sie sie auszuschalten, und beobachten Sie, ob sich der Standort noch aktualisiert.</string>
+    <string name="initial_guide_title_7" tools:ignore="MissingTranslation">Zwischenspeicher für ermittelte Adressen</string>
+    <string name="initial_guide_paragraph_7" tools:ignore="MissingTranslation">Sie können durch Zwischenspeichern gefundener Standorte Datenvolumen sparen. Standorte werden dann in der App gespeichert. Sie werden nicht an andere Orte im Netz gesendet oder dort gespeichert.</string>
+    <string name="initial_guide_title_8" tools:ignore="MissingTranslation">Ermittelte Adresse zwischenspeichern</string>
+    <string name="initial_guide_title_9" tools:ignore="MissingTranslation">Glückwunsch</string>
+    <string name="initial_guide_paragraph_9" tools:ignore="MissingTranslation">Die Anleitung endet hier. Weitere Einstellungen finden Sie im Einstellungsmenü (zum Beispiel Sprachen, Einheiten usw.). 
+\nDer nächste Bildschirm wird die geforderten Berechtigungen erklären und Ihnen die Möglichkeit bieten, sie abzufragen. 
+\n 
+\nViel Spaß mit der App.</string>
+    <string name="help_page_1_title" tools:ignore="MissingTranslation">Hauptanwendung</string>
+    <string name="help_page_2_title" tools:ignore="MissingTranslation">Widgets</string>
+    <string name="help_page_2_content" tools:ignore="MissingTranslation">Die App hat drei Widgets, die einige gebräuchliche Werte zum aktuellen Wetter (zum Beispiel die Temperatur) enthalten. Bestimmte Werte gelten einzig für ein spezielles Widget (zum Beispiel die Zeit des Sonnenuntergangs). In der rechten Ecke eines jeden Widgets wird die Zeit der letzten Aktualisierung angezeigt. Sie können sehen, was seit dem letzten Mal aktualisiert wurde (wenn Sie diese Option im Einstellungsmenü aktiviert haben). Neben der Zeit der letzten Aktualisierung finden Sie eine Aktualisierungsschaltfläche. Wenn Sie sie drücken, wird das Wetter (und der Standort, wenn die Standortaktualisierung gewählt ist) außerplanmäßig aktualisiert. Die letzte Möglichkeit in Widgets ist das Umschalten des Standortes - wenn Sie auf den aktuellen Standort drücken, wird der Standort zum nächsten wechseln.</string>
+    <string name="help_page_3_title" tools:ignore="MissingTranslation">Allgemeine Einstellungen</string>
+    <string name="help_page_3_content" tools:ignore="MissingTranslation">Diese Optionen haben Einfluss auf die gesamte App.</string>
+    <string name="help_page_3_content_units" tools:ignore="MissingTranslation">
+        <b>Temperatur</b> - Sie können die Temperatureinheit wählen, <b>Wind</b> - Sie können die Einheit für die Windgeschwindigkeit wählen und <b>Luftdruck</b> - Sie können die Einheit für den Luftdruck festlegen. Die Werte werden nach diesen Vorgaben neu berechnet.</string>
+    <string name="help_page_3_content_hide_description" tools:ignore="MissingTranslation">
+        <b>Wetterbeschreibung ausblenden</b> - die Beschreibung der Wetterbedingungen wird ausgeblendet. Das aktuelle Wetter wird nur als veränderliches Symbol dargestellt.</string>
+    <string name="help_page_3_content_hide_update_location_1" tools:ignore="MissingTranslation">" &lt;b xmlns:tools=\"http://schemas.android.com/tools\"&gt;Standortaktualisierungsintervall (Standort 0)&lt;/b&gt; - Sie können das Aktualisierungsintervall für Standort 0 festlegen - Standort 0 wird nach Mobilfunk-, WLAN-Netzen und GPS aktualisiert. Wenn Sie die Aktualisierung &lt;i xmlns:tools=\"http://schemas.android.com/tools\"&gt;über den Beschleunigungsmesser&lt;/i&gt; auswählen, nutzt die Anwendung den Beschleunigungsmesser, um Bewegungen zu ermitteln. Bei einer erkannten Bewegung berechnet die Anwendung die Entfernung. Wenn die Entfernungsobergrenze erreicht ist und die letzte Aktualisierung mindestens 15 Minuten zurückliegt, wird eine Aktualisierung des Standortes und der aktuellen Wetterdaten durchgeführt. Gelingt der Anwendung die Standortbestimmung nicht, wird im Widget \"Unbekannter Standort\" angezeigt. Ist die Standortaktualisierung fehlgeschlagen, wird die Aktualisierung nach 5 Minuten wiederholt. Sie können für die Standortaktualisierung auch ein zeitbasiertes Intervall festlegen. In der Einstellung &lt;b xmlns:tools=\"http://schemas.android.com/tools\"&gt;Wetteraktualisierungsintervall (Standort 1,2,3...)&lt;/b&gt; können Sie die Wetterdatenaktualisierung für manuell bestimmte Standorte einstellen."</string>
+    <string name="nav_menu_help" tools:ignore="MissingTranslation">Hilfe</string>
+    <string name="pressure_measurement_mmhg" tools:ignore="MissingTranslation">mmHg</string>
+    <string name="help_page_3_content_hide_update_location_3" tools:ignore="MissingTranslation">Wenn Sie die Option <b>GPS wenn nötig einschalten</b> markieren, wird die App versuchen, den Standort über Mobilfunk- oder WLAN-Netze zu finden. Kann der Standort über Netzwerkdienste nicht gefunden werden, schaltet die App für einige Sekunden das GPS an, um den Standort zu bestimmen.</string>
+    <string name="help_page_3_content_location_address_source" tools:ignore="MissingTranslation">
+        <b>Standort- und Adressenbezugsquelle</b> 
+\nSie können wählen, woher die App Standort und Adresse erhält.</string>
+    <string name="wind_speed_knots" tools:ignore="MissingTranslation">Knoten</string>
+    <string name="wind_speed_kilometers" tools:ignore="MissingTranslation">km/h</string>
+    <string name="pref_title_wind" tools:ignore="MissingTranslation">Wind</string>
+    <string name="pref_title_pressure" tools:ignore="MissingTranslation">Luftdruck</string>
+    <string name="update_location_none" tools:ignore="MissingTranslation">Standort nicht aktualisieren</string>
+    <string name="update_location_full" tools:ignore="MissingTranslation">Standort aktualisieren (empfohlen)</string>
+    <string name="update_location_network_only" tools:ignore="MissingTranslation">Standort ohne GPS aktualisieren</string>
+    <string name="update_location_gps_enabled" tools:ignore="MissingTranslation">GPS wenn nötig einschalten</string>
+    <string name="update_period_by_sensors" tools:ignore="MissingTranslation">Über Beschleunigungsmesser</string>
+    <string name="update_period_nothing" tools:ignore="MissingTranslation">Nur manuell</string>
+    <string name="preference_widget_title_update_auto_period" tools:ignore="MissingTranslation">Standortaktualisierungsintervall (Standort 0)</string>
+    <string name="preference_widget_show_labels" tools:ignore="MissingTranslation">Beschriftungen im Widget anzeigen</string>
+    <string name="preference_title_category_location_weather" tools:ignore="MissingTranslation">Standort und Wetter aktualisieren</string>
+    <string name="location_geocoder_title" tools:ignore="MissingTranslation">Standort- und Adressenbezugsquelle</string>
+    <string name="location_geocoder_local" tools:ignore="MissingTranslation">System, um den Standort zu erhalten, Nominatim, um die Adresse zu erhalten (empfohlen)</string>
+    <string name="location_geocoder_system" tools:ignore="MissingTranslation">System</string>
+    <string name="alertDialog_location_permission_positiveButton_permissions" tools:ignore="MissingTranslation">Berechtigungen abfragen</string>
+    <string name="help_page_3_content_display" tools:ignore="MissingTranslation">Diese Menüoptionen bestimmen die <b>Sprache</b>, das <b>Motiv</b> der Hauptanwendung und den <b>Symbolsatz</b>, der in der Anwendung und in den Widgets verwendet wird.</string>
+    <string name="help_page_3_content_cache_locations_2" tools:ignore="MissingTranslation">Sie können den Adressenzwischenspeicher über die Schaltfläche <b>Zwischenspeicher löschen</b> bereinigen.</string>
+    <string name="help_page_4_title" tools:ignore="MissingTranslation">Widget-Einstellungen</string>
+    <string name="help_page_4_content" tools:ignore="MissingTranslation">Die Widget-Einstellungen enthalten Konfigurationsmöglichkeiten für alle Widgets.</string>
+    <string name="help_page_4_content_show_labels_in_widget" tools:ignore="MissingTranslation">Wenn Sie die Option <b>Beschriftungen im Widget anzeigen</b> markieren, werden Beschriftungen anstelle von Symbolen für die Wetterwerte angezeigt.</string>
+    <string name="help_page_4_content_widget_theme" tools:ignore="MissingTranslation">Sie können den Widget-Hintergrund über die <b>Widget-Motiveinstellung</b> steuern.</string>
+    <string name="label_activity_help" tools:ignore="MissingTranslation">Hilfe</string>
+    <string name="title_activity_locations" tools:ignore="MissingTranslation">Standorte</string>
+    <string name="forecast_settings_column_icon" tools:ignore="MissingTranslation">Symbol</string>
+    <string name="forecast_settings_column_description" tools:ignore="MissingTranslation">Beschreibung</string>
+    <string name="forecast_settings_column_temperature" tools:ignore="MissingTranslation">Temperatur</string>
+    <string name="forecast_settings_column_wind" tools:ignore="MissingTranslation">Wind</string>
+    <string name="forecast_settings_column_rainsnow" tools:ignore="MissingTranslation">Regen/Schnee</string>
+    <string name="forecast_settings_column_humidity" tools:ignore="MissingTranslation">Luftfeuchte</string>
+    <string name="forecast_settings_column_pressure" tools:ignore="MissingTranslation">Luftdruck</string>
+    <string name="ok" tools:ignore="MissingTranslation">OK</string>
+    <string name="cancel" tools:ignore="MissingTranslation">Abbrechen</string>
+    <string name="location_update_strategy_title" tools:ignore="MissingTranslation">Standortaktualisierungen</string>
+    <string name="clear_cache_button" tools:ignore="MissingTranslation">Zwischenspeicher löschen</string>
+    <string name="db_info" tools:ignore="MissingTranslation">Zwischenspeicherinformationen</string>
+    <string name="db_header" tools:ignore="MissingTranslation">Adressenbestand im Zwischenspeicher</string>
+    <string name="location_cache_lasting_title" tools:ignore="MissingTranslation">Alter gespeicherter Werte</string>
+    <string name="location_cache_12_label" tools:ignore="MissingTranslation">12 Stunden</string>
+    <string name="location_cache_24_label" tools:ignore="MissingTranslation">ein Tag</string>
+    <string name="location_cache_168_label" tools:ignore="MissingTranslation">eine Woche</string>
+    <string name="location_cache_720_label" tools:ignore="MissingTranslation">ein Monat</string>
+    <string name="location_cache_2190_label" tools:ignore="MissingTranslation">drei Monate</string>
+    <string name="location_cache_4380_label" tools:ignore="MissingTranslation">sechs Monate</string>
+    <string name="location_cache_8760_label" tools:ignore="MissingTranslation">ein Jahr</string>
+    <string name="location_cache_88888_label" tools:ignore="MissingTranslation">nie</string>
+    <string name="location_cache_enable_label" tools:ignore="MissingTranslation">Standorte zwischenspeichern</string>
+    <string name="location_cache_enable_on" tools:ignore="MissingTranslation">Gefundene Standorte werden gespeichert</string>
+    <string name="help_page_1_content_1" tools:ignore="MissingTranslation">Die App beinhaltet eine Übersicht zum aktuellen Wetter. Die Wetterdaten können über den \"Aktualisieren\"-Schalter in der App-Leiste oder durch Herunterziehen aktualisiert werden. Rechts von dieser Schaltfläche finden Sie eine weitere zur Aktualisierung des Standortes. Dieser Schalter steht nur in der Einstellung \"Standort 0\" zur Verfügung (Standort 0 ist für die automatische Standortaktualisierung vorgesehen).</string>
+    <string name="help_page_1_content_1_2" tools:ignore="MissingTranslation">Neben dem Schalter zur Standortaktualisierung befindet sich die Schaltfläche zur Standortverwaltung (Lupensymbol). Über ihn können die Standorte bestimmt werden, die in der App und in den Widgets abrufbar sein sollen. Standardmäßig steht ein Standort (Standort 0) zur Verfügung, der mit der automatischen Standorterkennung verknüpft ist. Sie finden die Schaltfläche zum Ein-/Ausschalten dieser Funktion, wenn Sie diesen Eintrag nach links schieben. Wenn Sie das + anklicken, können Sie auf einer Karte einen Ort auswählen und so auch manuell Standorte hinzufügen. Die Standorte können über den \"Löschen\"-Schalter entfernt werden - die Schaltfläche wird sichtbar, wenn Sie den Eintrag nach links schieben.</string>
+    <string name="help_page_1_content_2" tools:ignore="MissingTranslation">Auf dem nächsten Bildschirm finden Sie die Wettervorhersage (wählen Sie die Vorhersage über das Menü oder wischen Sie nach rechts). Die Aktualisierung der Wettervorhersage erfolgt über den \"Aktualisieren\"-Schalter oder wenn der Bildschirm geöffnet wird (aber nicht öfter als einmal in der Stunde).</string>
+    <string name="preference_display_update_title" tools:ignore="MissingTranslation">Zusammenfassung zur Aktualisierung anzeigen</string>
+    <string name="preference_display_update_nothing" tools:ignore="MissingTranslation">Keine Anzeige</string>
+    <string name="preference_display_update_value" tools:ignore="MissingTranslation">Gerade aktualisierte Werte</string>
+    <string name="preference_display_update_location_source" tools:ignore="MissingTranslation">Aktualisierte Werte mit Standortquelle</string>
+    <string name="preference_display_update_value_info" tools:ignore="MissingTranslation">- - wird Standort und/oder Wetter aktualisieren
+\n. - Standort ist nicht erreichbar, sodass das Wetter nach dem letzten Standort aktualisiert wird
+\nW - Wetter nur aktualisiert
+\nL - Standort nur aktualisiert
+\nG - Position aus GPS und Wetter aktualisiert
+\nN - Standort aus dem Netzwerk und Wetter aktualisiert
+\nB - der Zugang zum Dienst Openweathermap.org wurde gesperrt, bitte versuchen Sie, das Wetter später zu aktualisieren
+\nE - das Zugriffstoken für den Dienst Openweathermap.org ist abgelaufen. Sie müssen die Anwendung aktualisieren, um wieder Zugriff zu erhalten</string>
+    <string name="preference_display_update_location_source_info" tools:ignore="MissingTranslation">W - nur Wetter aktualisiert
+\nL - nur Standort aktualisiert
+\nG - Standort über GPS und Wetter aktualisiert
+\nN - Standort über Netz und Wetter aktualisiert
+\nNi - Standort über Mobilfunknetz und Wetter aktualisiert, Standortbestimmung über Mozilla Location Service
+\nB - Der Zugang zum Dienst Openweathermap.org wurde gesperrt, versuchen Sie bitte, das Wetter später zu aktualisieren
+\nE - das Zugriffstoken für den Dienst Openweathermap.org ist abgelaufen. Du musst die Anwendung aktualisieren, um wieder Zugriff zu erhalten</string>
+    <string name="location_cache_lasting_summary" tools:ignore="MissingTranslation">Gespeicherte Werte werden nach der festgelegten Zeit entfernt</string>
+    <string name="location_cache_enable_off" tools:ignore="MissingTranslation">Gefundene Standorte werden nicht gespeichert</string>
+    <string name="locations_delete_location" tools:ignore="MissingTranslation">Löschen</string>
+    <string name="locations_disable_location" tools:ignore="MissingTranslation">Ausschalten</string>
+    <string name="locations_enable_location" tools:ignore="MissingTranslation">Einschalten</string>
+    <string name="locations_automatically_discovered" tools:ignore="MissingTranslation">Automatisch ermittelt</string>
+    <string name="locations_disabled" tools:ignore="MissingTranslation">Ausgeschaltet</string>
+    <string name="search_location_add" tools:ignore="MissingTranslation">Hinzufügen</string>
+    <string name="search_location_info" tools:ignore="MissingTranslation">Auf Karte tippen, um gewünschten Standort zu bestimmen, und warten bis die Adresse ermittelt wurde.</string>
+    <string name="current_weather_has_not_been_fetched" tools:ignore="MissingTranslation">Bitte klicken Sie auf die Aktualisieren-Schaltfläche, um das Wetter zuerst zu aktualisieren.</string>
+    <string name="debug_choose_file" tools:ignore="MissingTranslation">Protokollordner wählen</string>
+    <string name="debug_category_title" tools:ignore="MissingTranslation">Optionen zur Fehlersuche</string>
+    <string name="log_file_lasting_summary" tools:ignore="MissingTranslation">Protokolldatei wird nach der festgelegten Zeit neu erstellt</string>
+    <string name="log_file_lasting_title" tools:ignore="MissingTranslation">Protokoll erneuern nach</string>
+    <string name="log_file_12_label" tools:ignore="MissingTranslation">12 Stunden</string>
+    <string name="log_file_24_label" tools:ignore="MissingTranslation">einem Tag</string>
+    <string name="log_file_48_label" tools:ignore="MissingTranslation">zwei Tagen</string>
+    <string name="log_file_72_label" tools:ignore="MissingTranslation">drei Tagen</string>
+    <string name="log_file_168_label" tools:ignore="MissingTranslation">einer Woche</string>
+    <string name="log_file_720_label" tools:ignore="MissingTranslation">einem Monat</string>
+    <string name="preference_weather_icon_set_title" tools:ignore="MissingTranslation">Symbolsatz</string>
+    <string name="initial_guide_title_6" tools:ignore="MissingTranslation">Aufweckverhalten</string>
+    <string name="help_page_1_content_3" tools:ignore="MissingTranslation">Der dritte Bildschirm zeigt Diagramme zum Wetterverlauf.</string>
+    <string name="help_page_3_content_location_address_source_1" tools:ignore="MissingTranslation"> <b>Lokale MLS und Nominatim</b> - Die App bezieht den Standort und geografische Koordinaten von den Mozilla-Standortdiensten. Die Nominatim-Dienste rufen die Adresse aus diesen Koordinaten ab. Sie können zu zukünftigen Verbesserungen von MLS beitragen, indem Sie Mozilla Stumbler installieren (verfügbar unter https://play.google.com/store/apps/details\?id=org.mozilla.mozstumbler). Holen Sie sich Informationen über aktive und verfügbare Basisstationen aus dem Mobilfunknetz, indem Sie die Erlaubnis zum Telefonieren erteilen. Wi-Fi-Netzwerke in Ihrer Umgebung werden verwendet, um Ihren Standort genauer zu bestimmen.</string>
+    <string name="help_page_3_content_location_address_source_2" tools:ignore="MissingTranslation">
+        <b>System</b> - Die Anwendung bezieht Standort und Adresse über die Android-Systemdienste (für gewöhnlich über den Google-Standortdienst).</string>
+    <string name="help_page_3_content_notifications" tools:ignore="MissingTranslation">
+        <b>Benachrichtigungen</b> 
+\nWenn Sie die Benachrichtigungen einschalten, wird das Wetter regelmäßig aktualisiert. Aktuelle Wetterdaten werden dann in den Benachrichtigungen angezeigt. Es kann auch ein Vibrationsalarm bei Aktualisierung aktiviert werden.</string>
+    <string name="help_page_3_content_cache_locations" tools:ignore="MissingTranslation">Um Datenvolumen zu sparen und die Standortaktualisierung zu beschleunigen können Sie <b>Standorte zwischenspeichern</b> einschalten. Geografische Koordinaten und Adressen werden im Zwischenspeicher abgelegt. Die Anwendung muss unabhängig von dieser Einstellung weiterhin die Koordinaten über das Netz ermitteln. Aber der Abruf der Adresse über Nominatim findet nur für den Fall statt, dass sie nicht im Zwischenspeicher enthalten sind. Aktivieren Sie die Standortspeicherung werden von Ihnen besuchte Adressen in der App gespeichert. Es werden keine Informationen aus dem Zwischenspeicher außerhalb der Anwendung versendet.</string>
+    <string name="help_page_3_content_cache_locations_1" tools:ignore="MissingTranslation">Unter der Zwischenspeicher-Einstellung (Markierfeld) befindet sich die Einstellung für das <b>Alter der gespeicherten Werte</b>. Jede gespeicherte Adresse besitzt einen Zeitstempel. Ist der Zeitstempel älter als der hier festgelegte Wert, ruft die App Nominatim auf, um die Einträge zu aktualisieren.</string>
+    <string name="help_page_3_content_cache_locations_3" tools:ignore="MissingTranslation">Sie sehen einige der zuletzt gespeicherten Werte im Abschnitt <b>Zwischenspeicherinformation</b> wie auch die Gesamtzahl der Einträge.</string>
+    <string name="help_page_4_content_wake_up_strategy" tools:ignore="MissingTranslation"><b>Die Aufweckstrategie</b> dient dazu, fehlerhafte Herstellerimplementierungen der Android-Aurora-Dienste zu umgehen. Wenn Sie <i>Kein Aufwecken</i> wählen, sollte der Standort korrekt aktualisiert werden.
+\nIst dies nicht der Fall, versuchen Sie <i>Nur CPU aufwecken</i>, um den Status des Mobilfunk- und Wi-Fi-Netzwerks zu lesen.
+\n<i>Mit Bildschirm aufwecken</i> schaltet als letzten Ausweg den Bildschirm während der Standortaktualisierung für einige Sekunden ein.</string>
+    <string name="help_page_4_content_display_update_summary" tools:ignore="MissingTranslation">Nach der Aktualisierung von Standort und Wetter können Sie den Aktualisierungsstand neben der Aktualisierungszeit im Widget ablesen. Was angezeigt wird, kann über die Einstellung <b>Zusammenfassung zur Aktualisierung anzeigen</b> geregelt werden. Erklärung zu den erweiterten Optionen:</string>
+    <string name="help_page_5_title" tools:ignore="MissingTranslation">Optionen zur Fehlersuche</string>
+    <string name="help_page_5_content" tools:ignore="MissingTranslation">Hier befinden sich Einstellungen zur Aktivierung eines Fehlerprotokolls. Diese Option ist hifreich, wenn es Probleme mit der Anwendung gibt.</string>
+    <string name="menu_forecast_column_settings" tools:ignore="MissingTranslation">Spalteneinstellungen</string>
+    <string name="forecast_settings_columns" tools:ignore="MissingTranslation">Anzuzeigende Spalten</string>
+    <string name="navigation_drawer_open" tools:ignore="MissingTranslation">App-Navigation öffnen</string>
+    <string name="navigation_drawer_close" tools:ignore="MissingTranslation">App-Navigation schließen</string>
+    <string name="wake_up_strategy_summary" tools:ignore="MissingTranslation">Wenn die Standortbestimmung im Standby-Modus nicht funktioniert, versuchen Sie das Gerät für die Mobilfunkzellensuche aufzuwecken</string>
+    <string name="wake_up_strategy_title" tools:ignore="MissingTranslation">Aufweckverhalten</string>
+    <string name="nowakeup_label" tools:ignore="MissingTranslation">Kein Aufwecken</string>
+    <string name="wakeuppartial_label" tools:ignore="MissingTranslation">nur CPU aufwecken</string>
+    <string name="wakeupfull_label" tools:ignore="MissingTranslation">Mit Bildschirm aufwecken</string>
+    <string name="initial_guide_title_5" tools:ignore="MissingTranslation">Aufweckverhalten</string>
+    <string name="help_page_general_title" tools:ignore="MissingTranslation">Allgemeines</string>
+    <string name="label_apparent_temperature" tools:ignore="MissingTranslation">Gefühlte Temperatur: %s</string>
+    <string name="label_measured_temperature" tools:ignore="MissingTranslation">Gemessene Temperatur: %s</string>
+    <string name="measured_only" tools:ignore="MissingTranslation">Gemessener Wert allein</string>
+    <string name="measured_appearance_primary_measured" tools:ignore="MissingTranslation">Beide, gemessener zuerst</string>
+    <string name="measured_appearance_primary_appearance" tools:ignore="MissingTranslation">Beide, gefühlte zuerst</string>
+    <string name="appearance_only" tools:ignore="MissingTranslation">Nur gefühlter Wert</string>
+    <string name="pref_title_temperature_type" tools:ignore="MissingTranslation">Zeige Temperatur als</string>
+    <string name="forecast_settings_column_apparent_temperature" tools:ignore="MissingTranslation">Gefühlte Temperatur</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Ihr lokales Wetter</string>
+    <string name="pref_language_zh_rcn" tools:ignore="MissingTranslation">中文 (Chinesisch)</string>
+    <string name="pref_language_nb_rNO" tools:ignore="MissingTranslation">Norsk (Bokmål) (Norwegisch (Bokmål))</string>
+    <string name="pref_language_es" tools:ignore="MissingTranslation">Español (Spanisch)</string>
+    <string name="pref_language_el" tools:ignore="MissingTranslation">Ελληνικά (Griechisch)</string>
+    <string name="subscription_expired" tools:ignore="MissingTranslation">Zugang abgelaufen. Bitte aktualisieren Sie die App.</string>
+    <string name="subscription_is_wrong" tools:ignore="MissingTranslation">Ihr OpenweathermapApiKey ist nicht registriert.</string>
+    <string name="preference_title_category_system" tools:ignore="MissingTranslation">Systemeinstellungen</string>
+    <string name="open_weather_map_api_key" tools:ignore="MissingTranslation">Openweathermap.org API-Schlüssel</string>
+    <string name="open_weather_map_api_default_key" tools:ignore="MissingTranslation">Integriert</string>
+    <string name="pref_language_sw" tools:ignore="MissingTranslation">Kiswahili (Suaheli)</string>
+    <string name="alertDialog_battery_optimization_title" tools:ignore="MissingTranslation">Batterieoptimierung</string>
+    <string name="alertDialog_battery_optimization_message" tools:ignore="MissingTranslation">Die Anwendung führt Hintergrundprozesse aus, um Aktualisierungen von Standort, Wetter oder die Verfolgung des Standorts mittels Beschleunigungssensor durchzuführen. Daher wird die Anwendung Sie bitten, die Batterieoptimierung auszuschalten, um Hintergrundprozesse ausführen zu können.</string>
+    <string name="alertDialog_battery_optimization_proceed" tools:ignore="MissingTranslation">Fortfahren</string>
+    <string name="alertDialog_battery_optimization_cancel" tools:ignore="MissingTranslation">Abbrechen</string>
+    <string name="forecast_settings_column_wind_direction" tools:ignore="MissingTranslation">Windrichtung</string>
+    <string name="forecast_column_wind_direction_unit" tools:ignore="MissingTranslation">↑↗→</string>
+    <string name="location_not_initialized" tools:ignore="MissingTranslation">Standort wurde noch nicht initialisiert.
+\nZur Lokalisierung auf den Kreis klicken.</string>
+    <string name="pressure_measurement_inhg" tools:ignore="MissingTranslation">inHg</string>
+    <string name="pressure_measurement_mbar" tools:ignore="MissingTranslation">mbar</string>
+    <string name="inches_label" tools:ignore="MissingTranslation">Zoll</string>
+    <string name="pref_title_time_style" tools:ignore="MissingTranslation">Zeitformat</string>
+    <string name="time_style_system" tools:ignore="MissingTranslation">System</string>
+    <string name="time_style_12_h" tools:ignore="MissingTranslation">12 Stunden AM/PM</string>
+    <string name="time_style_24_h" tools:ignore="MissingTranslation">24 Stunden</string>
+    <string name="pref_title_wind_direction" tools:ignore="MissingTranslation">Stil der Windrichtung</string>
+    <string name="pref_title_rain_snow" tools:ignore="MissingTranslation">Regen und Schnee</string>
+    <string name="pref_language_sv" tools:ignore="MissingTranslation">Svenska (Schwedisch)</string>
+    <string name="pref_language_he" tools:ignore="MissingTranslation">עברית (Hebräisch)</string>
+    <string name="pref_language_nl" tools:ignore="MissingTranslation">Nederlands (Niederländisch)</string>
+    <string name="pref_language_ny" tools:ignore="MissingTranslation">Nyanja (Nyanja)</string>
+    <string name="pref_language_hu" tools:ignore="MissingTranslation">Magyar (Ungarisch)</string>
+    <string name="pref_language_ar" tools:ignore="MissingTranslation">العَرَبِيَّة (Arabisch)</string>
+    <string name="pref_language_uk" tools:ignore="MissingTranslation">Українська (Ukrainisch)</string>
+    <string name="pref_language_ro" tools:ignore="MissingTranslation">Română (Rumänisch)</string>
+    <string name="pref_language_pt_pt" tools:ignore="MissingTranslation">Português (Portugal) (Portugiesisch (Portugal))</string>
+    <string name="pref_language_pt_br" tools:ignore="MissingTranslation">Português (Brasilien) (Portugiesisch (Brasilien))</string>
+    <string name="label_pressure" tools:ignore="MissingTranslation">Druck</string>
+    <string name="wind_direction_nothing" tools:ignore="MissingTranslation">Deaktiviert</string>
+    <string name="wind_direction_abbreviation" tools:ignore="MissingTranslation">Abkürzung N↓, NO↙, …</string>
+    <string name="wind_direction_deg" tools:ignore="MissingTranslation">Grad Abweichung von Norden</string>
+    <string name="update_locale_dialog_message" tools:ignore="MissingTranslation">Die aktuelle Wetterbeschreibungssprache und die Adresse ändern sich beim nächsten Update oder Sie können es manuell erzwingen.</string>
+    <string name="weather_icon_set_fontbased" tools:ignore="MissingTranslation">Schriftartenbasierte Symbole</string>
+    <string name="weather_icon_set_merlin_the_red" tools:ignore="MissingTranslation">Merlin die roten Symbole</string>
+    <string name="weather_condition_description_none" tools:ignore="MissingTranslation">keine</string>
+    <string name="weather_condition_description_200" tools:ignore="MissingTranslation">Gewitter mit leichtem Regen</string>
+    <string name="weather_condition_description_201" tools:ignore="MissingTranslation">Gewitter mit Regen</string>
+    <string name="weather_condition_description_202" tools:ignore="MissingTranslation">Gewitter mit starkem Regen</string>
+    <string name="weather_condition_description_210" tools:ignore="MissingTranslation">leichtes Gewitter</string>
+    <string name="weather_condition_description_211" tools:ignore="MissingTranslation">Gewitter</string>
+    <string name="weather_condition_description_212" tools:ignore="MissingTranslation">starkes Gewitter</string>
+    <string name="weather_condition_description_221" tools:ignore="MissingTranslation">heftiges Gewitter</string>
+    <string name="weather_condition_description_230" tools:ignore="MissingTranslation">Gewitter mit leichtem Nieselregen</string>
+    <string name="weather_condition_description_231" tools:ignore="MissingTranslation">Gewitter mit Nieselregen</string>
+    <string name="weather_condition_description_232" tools:ignore="MissingTranslation">Gewitter mit starkem Nieselregen</string>
+    <string name="weather_condition_description_300" tools:ignore="MissingTranslation">leichter Nieselregen</string>
+    <string name="weather_condition_description_301" tools:ignore="MissingTranslation">Nieselregen</string>
+    <string name="weather_condition_description_302" tools:ignore="MissingTranslation">starker Nieselregen</string>
+    <string name="weather_condition_description_310" tools:ignore="MissingTranslation">leichter Nieselregen</string>
+    <string name="weather_condition_description_311" tools:ignore="MissingTranslation">Nieselregen</string>
+    <string name="weather_condition_description_312" tools:ignore="MissingTranslation">starker Nieselregen</string>
+    <string name="weather_condition_description_313" tools:ignore="MissingTranslation">Regenschauer und Nieselregen</string>
+    <string name="weather_condition_description_314" tools:ignore="MissingTranslation">starker Regenschauer und Nieselregen</string>
+    <string name="weather_condition_description_321" tools:ignore="MissingTranslation">Nieselschauer</string>
+    <string name="weather_condition_description_500" tools:ignore="MissingTranslation">leichter Regen</string>
+    <string name="weather_condition_description_501" tools:ignore="MissingTranslation">mäßiger Regen</string>
+    <string name="weather_condition_description_502" tools:ignore="MissingTranslation">starker Regen</string>
+    <string name="weather_condition_description_503" tools:ignore="MissingTranslation">sehr starker Regen</string>
+    <string name="weather_condition_description_504" tools:ignore="MissingTranslation">extremer Regen</string>
+    <string name="weather_condition_description_511" tools:ignore="MissingTranslation">überfrierender Regen</string>
+    <string name="weather_condition_description_520" tools:ignore="MissingTranslation">leichter Regenschauer</string>
+    <string name="weather_condition_description_521" tools:ignore="MissingTranslation">Regenschauer</string>
+    <string name="weather_condition_description_522" tools:ignore="MissingTranslation">starker Regenschauer</string>
+    <string name="weather_condition_description_531" tools:ignore="MissingTranslation">schwere Regenschauer</string>
+    <string name="weather_condition_description_600" tools:ignore="MissingTranslation">leichter Schnee</string>
+    <string name="weather_condition_description_601" tools:ignore="MissingTranslation">Schneefall</string>
+    <string name="weather_condition_description_602" tools:ignore="MissingTranslation">starker Schneefall</string>
+    <string name="weather_condition_description_611" tools:ignore="MissingTranslation">Graupel</string>
+    <string name="weather_condition_description_612" tools:ignore="MissingTranslation">Graupelschauer</string>
+    <string name="weather_condition_description_615" tools:ignore="MissingTranslation">Leichter Regen und Schneefall</string>
+    <string name="weather_condition_description_616" tools:ignore="MissingTranslation">Regen und Schneefall</string>
+    <string name="weather_condition_description_620" tools:ignore="MissingTranslation">leichter Schneeschauer</string>
+    <string name="weather_condition_description_621" tools:ignore="MissingTranslation">Schneeschauer</string>
+    <string name="weather_condition_description_622" tools:ignore="MissingTranslation">starker Schneeschauer</string>
+    <string name="weather_condition_description_701" tools:ignore="MissingTranslation">Nebel</string>
+    <string name="weather_condition_description_711" tools:ignore="MissingTranslation">Rauch</string>
+    <string name="weather_condition_description_721" tools:ignore="MissingTranslation">Dunst</string>
+    <string name="weather_condition_description_731" tools:ignore="MissingTranslation">Sand, aufgewirbelter Staub</string>
+    <string name="weather_condition_description_741" tools:ignore="MissingTranslation">Nebel</string>
+    <string name="weather_condition_description_751" tools:ignore="MissingTranslation">Sand</string>
+    <string name="weather_condition_description_761" tools:ignore="MissingTranslation">Staub</string>
+    <string name="weather_condition_description_762" tools:ignore="MissingTranslation">Ascheregen</string>
+    <string name="weather_condition_description_771" tools:ignore="MissingTranslation">Sturmböen</string>
+    <string name="weather_condition_description_781" tools:ignore="MissingTranslation">Tornado</string>
+    <string name="weather_condition_description_800" tools:ignore="MissingTranslation">klarer Himmel</string>
+    <string name="weather_condition_description_801" tools:ignore="MissingTranslation">wenige Wolken</string>
+    <string name="weather_condition_description_802" tools:ignore="MissingTranslation">lockere Bewölkung</string>
+    <string name="weather_condition_description_803" tools:ignore="MissingTranslation">durchbrochene Bewölkung</string>
+    <string name="weather_condition_description_804" tools:ignore="MissingTranslation">bewölkt</string>
+    <string name="share_weather_title" tools:ignore="MissingTranslation">Wetter teilen</string>
+    <string name="share_weather_app_not_found" tools:ignore="MissingTranslation">Kommunikations-App nicht gefunden</string>
+    <string name="share_weather_descritpion" tools:ignore="MissingTranslation">Stadt: %1$s
+\nTemperatur: %2$s
+\nBeschreibung: %3$s
+\nWind: %4$s %5$s
+\nSonnenaufgang: %6$s
+\nSonnenuntergang: %7$s</string>
+    <string name="notification_channel_name" tools:ignore="MissingTranslation">Ihr lokales Wetter</string>
+    <string name="notification_channel_description" tools:ignore="MissingTranslation">Ihre lokalen Wetterberichte</string>
+    <string name="graph_temperature_day_label" tools:ignore="MissingTranslation">Temperatur</string>
+    <string name="graph_wind_label" tools:ignore="MissingTranslation">Wind</string>
+    <string name="graph_rain_label" tools:ignore="MissingTranslation">Regen</string>
+    <string name="graph_snow_label" tools:ignore="MissingTranslation">Schnee</string>
+    <string name="graph_pressure_label" tools:ignore="MissingTranslation">Druck</string>
+    <string name="title_open_source_licenses" tools:ignore="MissingTranslation">Freie-Softwarelizenzen</string>
+    <string name="location_weather_update_status_location_not_reachable" tools:ignore="MissingTranslation">.</string>
+    <string name="location_weather_update_status_update_started" tools:ignore="MissingTranslation">-</string>
+    <string name="location_weather_update_status_weather_only" tools:ignore="MissingTranslation">W</string>
+    <string name="location_weather_update_status_location_only" tools:ignore="MissingTranslation">L</string>
+    <string name="location_weather_update_status_location_from_gps" tools:ignore="MissingTranslation">G</string>
+    <string name="location_weather_update_status_location_from_network" tools:ignore="MissingTranslation">N</string>
+    <string name="location_weather_update_status_access_banned" tools:ignore="MissingTranslation">B</string>
+    <string name="location_weather_update_status_access_expired" tools:ignore="MissingTranslation">E</string>
+    <string name="location_weather_update_status_location_from_network_cells" tools:ignore="MissingTranslation">c</string>
+    <string name="location_weather_update_status_location_from_network_wifis" tools:ignore="MissingTranslation">w</string>
+    <string name="log_to_file_label" tools:ignore="MissingTranslation">In Datei protokollieren</string>
+    <string name="log_to_file_off" tools:ignore="MissingTranslation">Nicht in Datei loggen</string>
+    <string name="log_to_file_on" tools:ignore="MissingTranslation">In Datei protokollieren</string>
+    <string name="temperature_unit_fahrenheit" tools:ignore="MissingTranslation">°F</string>
+    <string name="temperature_unit_celsius" tools:ignore="MissingTranslation">°C</string>
+    <string name="pref_title_date_style" tools:ignore="MissingTranslation">Datumsformat</string>
+    <string name="date_style_dots" tools:ignore="MissingTranslation">dd.mm.(yy)</string>
+    <string name="date_style_slash_month_first" tools:ignore="MissingTranslation">mm/dd(/yy)</string>
+    <string name="date_style_slash_day_first" tools:ignore="MissingTranslation">dd/mm(/yy)</string>
+    <string name="pref_language_sq" tools:ignore="MissingTranslation">Shqip (Albanisch)</string>
+    <string name="pref_language_eu" tools:ignore="MissingTranslation">Euskara (Baskisch)</string>
+    <string name="pref_language_be" tools:ignore="MissingTranslation">Беларуская (Weißrussisch)</string>
+    <string name="pref_language_be_latn" tools:ignore="MissingTranslation">Беларуская (Weißrussisch, Latein)</string>
+    <string name="pref_language_ca" tools:ignore="MissingTranslation">Català (Katalanisch)</string>
+    <string name="pref_language_cs" tools:ignore="MissingTranslation">Čeština (Tschechisch)</string>
+    <string name="pref_language_da" tools:ignore="MissingTranslation">Dansk (Dänisch)</string>
+    <string name="pref_language_en" tools:ignore="MissingTranslation">Englisch</string>
+    <string name="pref_language_fi" tools:ignore="MissingTranslation">Suomi (Finnisch)</string>
+    <string name="pref_language_fr" tools:ignore="MissingTranslation">Français (Französisch)</string>
+    <string name="pref_language_gl" tools:ignore="MissingTranslation">Galego (Galizisch)</string>
+    <string name="pref_language_de" tools:ignore="MissingTranslation">Deutsch</string>
+    <string name="pref_language_it" tools:ignore="MissingTranslation">Italiano (Italienisch)</string>
+    <string name="pref_language_jp" tools:ignore="MissingTranslation">日本語 (Japanisch)</string>
+    <string name="pref_language_pl" tools:ignore="MissingTranslation">Polski (Polnisch)</string>
+    <string name="pref_language_ru" tools:ignore="MissingTranslation">Русский (Russisch)</string>
+    <string name="pref_language_sr" tools:ignore="MissingTranslation">Српски (Serbisch)</string>
+    <string name="pref_language_sl" tools:ignore="MissingTranslation">Slovenščina (Slowenisch)</string>
+    <string name="pref_language_tr" tools:ignore="MissingTranslation">Türkçe (Türkisch)</string>
+    <string name="update_period_regular_only" tools:ignore="MissingTranslation">Wann regelmäßig aktualisieren</string>
+    <string name="pref_title_notification_presence" tools:ignore="MissingTranslation">Anwensenheit von Benachrichtigungen</string>
+    <string name="notification_when_updated" tools:ignore="MissingTranslation">Wann aktualisiert</string>
+    <string name="notification_permanent" tools:ignore="MissingTranslation">Dauerhaft</string>
+    <string name="notification_on_lock_screen" tools:ignore="MissingTranslation">Auf dem Sperrbildschirm</string>
+    <string name="notification_status_icon_sun" tools:ignore="MissingTranslation">Sonnensymbol</string>
+    <string name="notification_status_icon_temperature" tools:ignore="MissingTranslation">Temperatur</string>
+    <string name="notification_status_icon_one_invisible_point" tools:ignore="MissingTranslation">Unsichtbar</string>
+    <string name="notification_visual_style_build_in" tools:ignore="MissingTranslation">Klassisch</string>
+    <string name="notification_visual_style_custom_with_forecast" tools:ignore="MissingTranslation">Benutzerdefiniert mit einer Prognose</string>
+    <string name="pref_title_notification_visual_style" tools:ignore="MissingTranslation">Visueller Benachrichtigungsstil</string>
+    <string name="pref_title_notification_status_icon" tools:ignore="MissingTranslation">Stil der Symbolstatusleiste</string>
+    <string name="preference_title_category_units" tools:ignore="MissingTranslation">Einheiteneinstellungen</string>
+    <string name="preference_title_power_save" tools:ignore="MissingTranslation">Energiesparoptionen</string>
+    <string name="menu_action_visible_graph_settings" tools:ignore="MissingTranslation">Einstellungen für sichtbare Diagramme</string>
+    <string name="menu_action_graph_combined_settings" tools:ignore="MissingTranslation">Einstellungen für kombinierte Diagramme</string>
+    <string name="forecast_settings_graph_combined" tools:ignore="MissingTranslation">Kombiniert</string>
+    <string name="forecast_settings_graph_temperature" tools:ignore="MissingTranslation">Temperatur</string>
+    <string name="forecast_settings_graph_wind" tools:ignore="MissingTranslation">Wind</string>
+    <string name="forecast_settings_graph_rain" tools:ignore="MissingTranslation">Regen</string>
+    <string name="forecast_settings_graph_rain_bar" tools:ignore="MissingTranslation">Regen (bar)</string>
+    <string name="forecast_settings_graph_snow" tools:ignore="MissingTranslation">Schnee</string>
+    <string name="forecast_settings_graph_snow_bar" tools:ignore="MissingTranslation">Schnee (bar)</string>
+    <string name="forecast_settings_graph_pressure" tools:ignore="MissingTranslation">Druck</string>
+    <string name="forecast_settings_graph_combined_temperature" tools:ignore="MissingTranslation">Temperatur</string>
+    <string name="forecast_settings_graph_combined_wind" tools:ignore="MissingTranslation">Wind</string>
+    <string name="forecast_settings_graph_combined_rain_snow" tools:ignore="MissingTranslation">Regen/Schnee</string>
+    <string name="forecast_settings_graph_combined_pressure" tools:ignore="MissingTranslation">Druck</string>
+    <string name="forecast_settings_visible_graphs" tools:ignore="MissingTranslation">Diagramme zum Anzeigen</string>
+    <string name="forecast_settings_combined_values" tools:ignore="MissingTranslation">Daten für kombinierte Diagramme</string>
+    <string name="forecast_settings_graph_combined_show_legend" tools:ignore="MissingTranslation">Legende im Diagramm anzeigen</string>
+    <string name="forecast_number_of_days_hours_3_days" tools:ignore="MissingTranslation">3 Tage</string>
+    <string name="forecast_number_of_days_hours_4_days" tools:ignore="MissingTranslation">4 Tage</string>
+    <string name="forecast_number_of_days_hours_5_days" tools:ignore="MissingTranslation">5 Tage</string>
+    <string name="forecast_number_of_days_hours_3_hours" tools:ignore="MissingTranslation">3x (3 Stunden Intervall)</string>
+    <string name="forecast_number_of_days_hours_4_hours" tools:ignore="MissingTranslation">4x (3 Stunden Intervall)</string>
+    <string name="forecast_number_of_days_hours_5_hours" tools:ignore="MissingTranslation">5x (3 Stunden Intervall)</string>
+    <string name="preference_widget_graphs_native_scale" tools:ignore="MissingTranslation">Diagramm in nativer Auflösung anzeigen (wenn das Diagramm zu klein ist)</string>
+    <string name="preference_widget_show_controls" tools:ignore="MissingTranslation">Einstellungen im Widget anzeigen</string>
+    <string name="widget_graph_settings_button" tools:ignore="MissingTranslation">Schaltfläche für die Einstellungen der Widget-Grafik</string>
+    <string name="widget_location_settings_button" tools:ignore="MissingTranslation">Schaltfläche für Widget-Positionseinstellungen</string>
+    <string name="widget_action_settings_button" tools:ignore="MissingTranslation">Schaltfläche für die Einstellungen der Widgetaktionen</string>
+    <string name="widget_setting_forecast_day_name_style" tools:ignore="MissingTranslation">Tag per Abkürzung anzeigen</string>
+    <string name="widget_setting_forecast_days" tools:ignore="MissingTranslation">Anzahl der Tage für die Vorhersage</string>
+    <string name="widget_setting_location_label" tools:ignore="MissingTranslation">Standortbestimmung</string>
+    <string name="widget_setting_actions_city_label" tools:ignore="MissingTranslation">Stadtkennzeichnung</string>
+    <string name="widget_setting_actions_main_icon_label" tools:ignore="MissingTranslation">Aktuelles Wettersymbol</string>
+    <string name="widget_setting_actions_forecast_label" tools:ignore="MissingTranslation">Wettervorhersage</string>
+    <string name="widget_setting_actions_graph_label" tools:ignore="MissingTranslation">Diagramm</string>
+    <string name="widget_action_main_screen" tools:ignore="MissingTranslation">Hauptbildschirm</string>
+    <string name="widget_action_forecast_screen" tools:ignore="MissingTranslation">Wettervorhersage-Bildschirm</string>
+    <string name="widget_action_graphs_screen" tools:ignore="MissingTranslation">Diagrammbildschirm</string>
+    <string name="widget_action_switch_location" tools:ignore="MissingTranslation">Standort wechseln</string>
+    <string name="widget_setting_location_show_location" tools:ignore="MissingTranslation">Standort im Widget anzeigen</string>
+    <string name="snackbar_add_location_disabled" tools:ignore="MissingTranslation">Sie dürfen im Moment nicht mehr als %1$d Orte haben.</string>
+    <string name="pressure_measurement_psi" tools:ignore="MissingTranslation">Psi</string>
+    <string name="pref_language_bg" tools:ignore="MissingTranslation">Bulgarisch</string>
+    <string name="pref_language_zh_rtw" tools:ignore="MissingTranslation">Chinesisch (traditionell)</string>
+    <string name="pref_language_sd" tools:ignore="MissingTranslation">Sindhis</string>
+    <string name="wind_speed_beaufort" tools:ignore="MissingTranslation">Beaufort</string>
+    <string name="dew_point_label" tools:ignore="MissingTranslation">Taupunkt: %s</string>
+    <string name="label_dew_point" tools:ignore="MissingTranslation">Taupunkt</string>
+    <string name="widget_details_setting_button" tools:ignore="MissingTranslation">Schaltfläche für Widget-Wetterdetail-Einstellungen</string>
+    <string name="pref_language_vi" tools:ignore="MissingTranslation">Vietnamesisch</string>
+    <string name="pref_language_bn_rBD" tools:ignore="MissingTranslation">Bengalisch (Bangladesch)</string>
+    <string name="alertDialog_voice_disclaimer_title" tools:ignore="MissingTranslation">Text- und Anleitungsübersetzungen</string>
+    <string name="alertDialog_voice_disclaimer_message" tools:ignore="MissingTranslation">"Diese App verfügt über eine Sprachführung in Form von Textübersetzungen und Sprachbefehlen, die freundlicherweise von Freiwilligen auf https://hosted.weblate.org/projects/your-local-weather zur Verfügung gestellt wurden. Der App-Entwickler kann nicht garantieren, dass diese korrekt sind - Sie akzeptieren dies, indem Sie die App verwenden. Um die App zu verwenden, muss TTS (Text-to-Speech) installiert und die Sprachführung in den Einstellungen aktiviert sein, wo Sie Ihre eigenen Sprachbefehle einstellen können. "</string>
+    <string name="preference_title_tts" tools:ignore="MissingTranslation">Führungseinstellungen</string>
+    <string name="preference_title_add_tts" tools:ignore="MissingTranslation">Neue Führungseinstellungen</string>
+    <string name="pref_title_tts_speaker_enabled" tools:ignore="MissingTranslation">Wiedergabe der Führung über Lautsprecher</string>
+    <string name="pref_title_tts_wired_headset" tools:ignore="MissingTranslation">Führung über kabelgebundenes Headset einschalten</string>
+    <string name="pref_title_tts_bt" tools:ignore="MissingTranslation">Führung über Bluetooth-Headset einschalten</string>
+    <string name="pref_title_tts_bt_all" tools:ignore="MissingTranslation">Alle</string>
+    <string name="pref_title_tts_say_greeting" tools:ignore="MissingTranslation">Begrüßung</string>
+    <string name="pref_title_tts_say_custom" tools:ignore="MissingTranslation">Benutzerdefiniert</string>
+    <string name="pref_title_tts_say_location" tools:ignore="MissingTranslation">Standort sagen</string>
+    <string name="pref_title_tts_say_weather_description" tools:ignore="MissingTranslation">Wetterbeschreibung sagen</string>
+    <string name="pref_title_tts_say_temperature" tools:ignore="MissingTranslation">Temperatur sagen</string>
+    <string name="pref_title_tts_say_wind" tools:ignore="MissingTranslation">Wind sagen</string>
+    <string name="pref_title_tts_trigger_type_label" tools:ignore="MissingTranslation">Sagen:</string>
+    <string name="pref_title_tts_time" tools:ignore="MissingTranslation">Zeit</string>
+    <string name="pref_title_tts_trigger_bt_devices" tools:ignore="MissingTranslation">Für Gerät(e):</string>
+    <string name="pref_title_tts_enabled_devices" tools:ignore="MissingTranslation">Aktivierte(s) Gerät(e):</string>
+    <string name="pref_title_tts_location_label" tools:ignore="MissingTranslation">Für Standort:</string>
+    <string name="pref_title_tts_what_to_say" tools:ignore="MissingTranslation">Was zu sagen:</string>
+    <string name="voice_settings_language" tools:ignore="MissingTranslation">Sprache</string>
+    <string name="preference_title_tts_lang" tools:ignore="MissingTranslation">Optionen für die Führungssprache</string>
+    <string name="pref_title_tts_speaker_label" tools:ignore="MissingTranslation">Lautsprecher</string>
+    <string name="pref_title_tts_wired_headset_label" tools:ignore="MissingTranslation">kabelgebundenes Headset</string>
+    <string name="pref_title_tts_bt_label" tools:ignore="MissingTranslation">Bluetooth</string>
+    <string name="tts_say_text_label" tools:ignore="MissingTranslation">Was soll gesagt werden:</string>
+    <string name="tts_say_greeting_morning" tools:ignore="MissingTranslation">Guten Morgen</string>
+    <string name="tts_say_greeting_day" tools:ignore="MissingTranslation">Hallo</string>
+    <string name="tts_say_greeting_evening" tools:ignore="MissingTranslation">Guten Abend</string>
+    <string name="tts_say_current_weather_with_location" tools:ignore="MissingTranslation">Aktuelles Wetter für Standort %s</string>
+    <string name="tts_say_current_weather" tools:ignore="MissingTranslation">Aktuelles Wetter</string>
+    <string name="voice_setting_trigger_on_weather_update" tools:ignore="MissingTranslation">Wenn das Wetter aktualisiert wird</string>
+    <string name="voice_setting_trigger_when_bt_connected" tools:ignore="MissingTranslation">Wenn ein Bluetooth-Gerät angeschlossen ist</string>
+    <string name="voice_setting_trigger_at_time" tools:ignore="MissingTranslation">Zur Zeit</string>
+    <string name="tty_say_wind" tools:ignore="MissingTranslation">%3$s Wind %1$s %2$s</string>
+    <string name="tty_say_temperature" tools:ignore="MissingTranslation">Temperatur %s</string>
+    <string name="tts_say_wind_direction_north" tools:ignore="MissingTranslation">Nord</string>
+    <string name="tts_say_wind_direction_north_east" tools:ignore="MissingTranslation">Nordost</string>
+    <string name="tts_say_wind_direction_east" tools:ignore="MissingTranslation">Ost</string>
+    <string name="tts_say_wind_direction_south_east" tools:ignore="MissingTranslation">Südost</string>
+    <string name="tts_say_wind_direction_south" tools:ignore="MissingTranslation">Süd</string>
+    <string name="tts_say_wind_direction_south_west" tools:ignore="MissingTranslation">Südwest</string>
+    <string name="tts_say_wind_direction_west" tools:ignore="MissingTranslation">West</string>
+    <string name="tts_say_wind_direction_north_west" tools:ignore="MissingTranslation">Nordwest</string>
+    <string name="pref_title_tts_say_forecast" tools:ignore="MissingTranslation">Tagesvorhersage sagen</string>
+    <string name="tty_say_max_rain" tools:ignore="MissingTranslation">maximale Niederschlagsmenge %s Millimeter</string>
+    <string name="tty_say_max_snow" tools:ignore="MissingTranslation">maximaler Schneefall %s Millimeter</string>
+    <string name="tty_say_max_wind" tools:ignore="MissingTranslation">%3$s Wind im Maximum %1$s %2$s</string>
+    <string name="tty_say_temp_max" tools:ignore="MissingTranslation">die maximale Temperatur beträgt %1$s bis %2$s</string>
+    <string name="tty_say_temp_min" tools:ignore="MissingTranslation">die minimale Temperatur beträgt %1$s bis %2$s</string>
+    <string name="tty_say_weather_forecast" tools:ignore="MissingTranslation">Wettervorhersage</string>
+    <string name="tty_say_weather_forecast_today" tools:ignore="MissingTranslation">heute</string>
+    <string name="tty_say_weather_forecast_tomorrow" tools:ignore="MissingTranslation">morgen</string>
+    <string name="tty_say_weather_forecast_night" tools:ignore="MissingTranslation">nachts</string>
+    <string name="tty_say_weather_forecast_morning" tools:ignore="MissingTranslation">morgens</string>
+    <string name="tty_say_weather_forecast_afternoon" tools:ignore="MissingTranslation">nachmittags</string>
+    <string name="tty_say_weather_forecast_evening" tools:ignore="MissingTranslation">abends</string>
+    <string name="tty_say_weather_forecast_rarely" tools:ignore="MissingTranslation">selten</string>
+    <string name="tty_say_weather_forecast_and" tools:ignore="MissingTranslation">und</string>
+    <string name="temperature_unit_kelvin" tools:ignore="MissingTranslation">K</string>
+    <string name="weather_forecast_features_paid" tools:ignore="MissingTranslation">Bezahlte/erweiterte Funktionen</string>
+    <string name="weather_forecast_features_free" tools:ignore="MissingTranslation">Kostenlose/eingeschränkte Funktionen</string>
+    <string name="preference_weather_weather_forecast_features_title" tools:ignore="MissingTranslation">Wettervorhersagefunktionen</string>
+    <string name="location_weather_update_status_location_from_last_location" tools:ignore="MissingTranslation">l</string>
+    <string name="location_weather_update_status_too_early_update" tools:ignore="MissingTranslation">O</string>
+    <string name="pref_title_tts_not_supported" tools:ignore="MissingTranslation">Das Gebietsschema Ihrer App wird von Ihrem TTS-System (Text-to-Speech) nicht unterstützt. Gehen Sie oben rechts auf \"Spracheinstellungen der Anleitung\".</string>
+    <string name="pref_title_tts_presence" tools:ignore="MissingTranslation">Ihr App-Gebietsschema wird von Ihrem TTS-System (Text-to-Speech) nicht unterstützt. Wählen Sie unten eine Anleitungssprache aus der Liste der unterstützten Sprachen aus.</string>
+    <string name="pref_title_tts_lang_app_default" tools:ignore="MissingTranslation">Nach App-Gebietsschema</string>
+    <string name="pref_title_tts_app_general_info" tools:ignore="MissingTranslation">Die App sendet Textbefehle an das TTS-System (Text-to-Speech), das sie in eine Stimme umwandelt. Es ist in der Regel standardmäßig auf dem System vorhanden. Falls nicht, oder falls das installierte TTS Ihre gewünschte Sprache nicht unterstützt, installieren Sie eines aus einem App-Store (zum Beispiel: https://search.f-droid.org/\?q=TTS ).</string>
+    <string name="pref_title_tts_lang_select_locale" tools:ignore="MissingTranslation">Ausgewähltes Gebietsschema zur Orientierung:</string>
+    <string name="pref_title_tts_lang_app_locale" tools:ignore="MissingTranslation">Gebietsschema der Anwendung:</string>
+    <string name="pref_language_id" tools:ignore="MissingTranslation">Indonesisch (Indonesisch)</string>
+    <string name="pref_language_pt" tools:ignore="MissingTranslation">Português (Portugiesisch)</string>
+    <string name="pref_language_fa" tools:ignore="MissingTranslation">Persisch (Persisch)</string>
+    <string name="pref_language_hi" tools:ignore="MissingTranslation">Hindi (Hindi)</string>
+    <string name="weather_forecast_license_key_title" tools:ignore="MissingTranslation">Lizenzschlüssel</string>
+    <string name="pressure_measurement_kpa" tools:ignore="MissingTranslation">kPa</string>
+    <string name="too_early_update_error" tools:ignore="MissingTranslation">Zu frühes Update!</string>
+    <string name="menu_forecast_type_settings" tools:ignore="MissingTranslation">Prognosetyp</string>
+    <string name="alertDialog_android_10_permissions_message" tools:ignore="MissingTranslation">Ab Android 10 ist ein genauerer Zugriff auf den Standort erforderlich, um Informationen über das verbundene GSM/LTE-Netz zu erhalten. Erteilen Sie die Erlaubnis, den Standort auch im Hintergrund abzurufen (wenn Sie Ihren Standort die ganze Zeit ermittelt haben wollen).</string>
+    <string name="alertDialog_android_10_permissions_title" tools:ignore="MissingTranslation">Android 10 Berechtigungsänderungen</string>
+    <string name="alertDialog_mls_service_message" tools:ignore="MissingTranslation">Der Zugriff auf den Mozilla-Standortdienst ist seit 1.3.2020 abgelaufen. Die App ist gezwungen, das Andorid-System für die Ermittlung der Standortkoordinaten zu verwenden. Die Adresse wird weiterhin von Nominatim aufgelöst. Bitte berücksichtigen Sie dies bei der Verwendung der App.</string>
+    <string name="alertDialog_mls_service_title" tools:ignore="MissingTranslation">Einschränkungen des Mozilla-Standortdienstes</string>
+    <string name="pref_language_hr" tools:ignore="MissingTranslation">Hrvatski (Kroatisch)</string>
+    <string name="alertDialog_background_location_permission_title" tools:ignore="MissingTranslation">Für die Anwendung ist eine Hintergrundstandortberechtigung erforderlich</string>
+    <string name="alertDialog_background_location_permission_message" tools:ignore="MissingTranslation">Die Anwendung benötigt eine Standortberechtigung im Hintergrund, um das Wetter an dem Standort zu erhalten, an dem Sie sich tatsächlich befinden. Wenn Sie damit einverstanden sind, sollten Sie die Option auf dem nächsten Bildschirm auswählen:</string>
+    <string name="help_page_4_title_graph" tools:ignore="MissingTranslation">Kombiniertes Diagramm</string>
+    <string name="help_page_4_content_widget_graph" tools:ignore="MissingTranslation">Wenn Sie im Diagramm auswählen, dass außer Wind und Temperatur (in Balken) auch Regen-/Schneewerte angezeigt werden sollen, wird der Wert als log10 berechnet. Der maximale Wert der (nicht sichtbaren) Achse beträgt dann etwa 160 mm (oder 6,3 Zoll).</string>
+    <string name="update_period_2hours" tools:ignore="MissingTranslation">2 Stunden</string>
+    <string name="pref_language_th" tools:ignore="MissingTranslation">Thailändisch</string>
+    <string name="permission_available_notification" tools:ignore="MissingTranslation">Benachrichtigungsberechtigung wurde erteilt</string>
+    <string name="locations_deleted_because_of_limit" tools:ignore="MissingTranslation">Gelöschte Orte oberhalb des Grenzwertes.</string>
+    <string name="preference_widget_title_update_night" tools:ignore="MissingTranslation">Nicht zwischen 00:00 und 06:00 Uhr (Standort 1,2,3,...)</string>
+    <string name="preference_widget_title_update_auto_night" tools:ignore="MissingTranslation">Nicht zwischen 00:00 und 06:00 Uhr (Standort 0)</string>
+    <string name="pref_language_kab" tools:ignore="MissingTranslation">Kabylisch</string>
+    <string name="pref_language_ko" tools:ignore="MissingTranslation">Koreanisch</string>
+    <string name="pref_language_lt" tools:ignore="MissingTranslation">Litauisch</string>
+    <string name="pref_title_tts_permission" tools:ignore="MissingTranslation">Erlaubnis für BT</string>
+    <string name="theme_system" tools:ignore="MissingTranslation">Nach System</string>
+</resources>

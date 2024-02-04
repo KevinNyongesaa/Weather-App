@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.github.triplet.play'
+
+android {
+    playAccountConfigs {
+        defaultAccountConfig {
+            jsonFile = file('../../your-local-weather-addons/keys.json')
+        }
+    }
+
+    play {
+        track = 'production'
+        untrackOld = true
+        uploadImages = true
+    }
+
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "org.thosp.yourlocalweather"
+        minSdkVersion 14
+        targetSdkVersion 33
+        versionCode 170
+        versionName "5.8.22"
+        vectorDrawables.useSupportLibrary true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        playAccountConfig = playAccountConfigs.defaultAccountConfig
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        outputs.all {
+            outputFileName = "YourLocalWeather-${variant.name}.apk"
+        }
+    }
+
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*'
+    }
+}
+
+dependencies {
+// AndroidX
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+// Third-party
+    implementation 'com.github.yukuku:ambilwarna:2.0.1'
+    implementation 'com.github.thuryn:MPAndroidChart:v4.0.4'
+    //implementation files('../../../MPAndroidChart/MPChartLib/build/intermediates/compile_library_classes/debug/classes.jar')
+    implementation 'org.microg:address-formatter:0.2.1'
+    implementation 'com.github.hedzr:android-file-chooser:v1.2.0-final'
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    implementation 'org.osmdroid:osmdroid-android:6.1.13'
+
+// Testing
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.mockito:mockito-core:3.5.10'
+}
